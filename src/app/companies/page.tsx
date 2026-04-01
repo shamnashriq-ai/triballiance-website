@@ -30,6 +30,7 @@ const featured = [
     description:
       "Pioneering robotics and automation solutions for industrial and commercial applications, positioning Malaysia at the forefront of the Fourth Industrial Revolution.",
     href: "/companies/ideasparq-robotics",
+    image: "/ideasparq-robotics-bg.jpg",
   },
   {
     name: "Wigo Air Sdn Bhd",
