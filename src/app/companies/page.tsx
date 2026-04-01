@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
 import ScrollReveal, { StaggerChildren, StaggerItem } from "@/components/ScrollReveal";
@@ -13,6 +14,7 @@ const featured = [
     description:
       "Specializing in mineral resources exploration, extraction, and processing. Tribal Minera drives responsible mining operations that contribute to Malaysia\u2019s industrial growth.",
     href: "/companies/tribal-minera",
+    image: "/tribal-minera-bg.jpg",
   },
   {
     name: "Tribal Floria Sdn Bhd",
@@ -78,7 +80,17 @@ export default function CompaniesPage() {
                     i % 2 === 1 ? "md:direction-rtl" : ""
                   }`}
                 >
-                  <div className={`aspect-[16/10] img-placeholder ${i % 2 === 1 ? "md:order-2" : ""}`} />
+                  <div className={`aspect-[16/10] relative overflow-hidden ${company.image ? "" : "img-placeholder"} ${i % 2 === 1 ? "md:order-2" : ""}`}>
+                    {company.image && (
+                      <Image
+                        src={company.image}
+                        alt={company.name}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                    )}
+                  </div>
                   <div className={`flex flex-col justify-center ${i % 2 === 1 ? "md:order-1" : ""}`}>
                     <span className="label-text text-[var(--color-accent)] block mb-4">
                       {company.industry}
