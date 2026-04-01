@@ -94,7 +94,7 @@ export default function PhilosophyPage() {
         <div className="container-site text-center">
           <ScrollReveal>
             <blockquote
-              className="text-[var(--color-text-primary)] max-w-3xl mx-auto"
+              className="text-[var(--color-text-primary)] max-w-3xl mx-auto text-center"
               style={{
                 fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                 fontSize: "var(--text-heading)",

@@ -71,11 +71,11 @@ export default function LeadershipPage() {
         <div className="container-site relative z-10" style={{ paddingTop: "120px", paddingBottom: "120px" }}>
           <div className="text-center">
             <ScrollReveal>
-              <span className="label-text text-[var(--color-accent)] block mb-3">
+              <span className="label-text text-[var(--color-accent)] block mb-3 text-center">
                 Leadership Philosophy
               </span>
               <blockquote
-                className="text-white max-w-3xl mx-auto"
+                className="text-white max-w-3xl mx-auto text-center"
                 style={{
                   fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                   fontSize: "var(--text-heading)",
@@ -87,7 +87,7 @@ export default function LeadershipPage() {
                 &ldquo;We don&apos;t just build companies — we build ecosystems of
                 opportunity that empower people and communities to thrive.&rdquo;
               </blockquote>
-              <p className="label-text text-[var(--color-accent)] mt-7">
+              <p className="label-text text-[var(--color-accent)] mt-7 text-center">
                 Shamsul Nashriq Norhisham, Group CEO
               </p>
             </ScrollReveal>

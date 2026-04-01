@@ -23,7 +23,7 @@ export default function SectionHeading({
     <ScrollReveal className={`mb-[56px] md:mb-[56px] max-md:mb-10 ${centered ? "text-center" : ""}`}>
       {subtitle && (
         <span
-          className={`label-text mb-3 block ${
+          className={`label-text mb-3 block ${centered ? "text-center" : ""} ${
             light ? "text-white/40" : "text-[var(--color-accent)]"
           }`}
         >
@@ -38,14 +38,14 @@ export default function SectionHeading({
           lineHeight: 1.1,
           marginBottom: 0,
         }}
-        className={`${light ? "text-white" : "text-[var(--color-text-primary)]"}`}
+        className={`${centered ? "text-center" : ""} ${light ? "text-white" : "text-[var(--color-text-primary)]"}`}
       >
         {title}
       </h2>
       {description && (
         <p
           className={`max-w-[600px] text-[var(--text-body)] leading-relaxed mt-5 ${
-            centered ? "mx-auto" : ""
+            centered ? "text-center mx-auto" : ""
           } ${light ? "text-white/50" : "text-[var(--color-text-secondary)]"}`}
         >
           {description}

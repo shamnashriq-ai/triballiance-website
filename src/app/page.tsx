@@ -134,11 +134,11 @@ export default function HomePage() {
         <div className="container-site">
           <ScrollReveal>
             <div className="text-center mb-[56px] max-md:mb-10">
-              <span className="label-text text-[var(--color-accent)] block mb-3">
+              <span className="label-text text-[var(--color-accent)] block mb-3 text-center">
                 Our Approach
               </span>
               <h2
-                className="text-[var(--color-text-primary)]"
+                className="text-[var(--color-text-primary)] text-center"
                 style={{
                   fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                   fontSize: "var(--text-heading)",
@@ -305,7 +305,7 @@ export default function HomePage() {
           <div className="text-center">
             <ScrollReveal>
               <h2
-                className="text-[var(--color-text-primary)]"
+                className="text-[var(--color-text-primary)] text-center"
                 style={{
                   fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                   fontSize: "var(--text-display)",
@@ -318,7 +318,7 @@ export default function HomePage() {
                 <br />
                 <em>meaningful</em> together.
               </h2>
-              <p className="text-[var(--color-text-secondary)] text-lg max-w-[600px] mx-auto leading-relaxed mt-5 mb-0">
+              <p className="text-[var(--color-text-secondary)] text-lg max-w-[600px] mx-auto leading-relaxed mt-5 mb-0 text-center">
                 Partnerships, investments, or conversations — we&apos;re always open
                 to those who share our ambition.
               </p>
