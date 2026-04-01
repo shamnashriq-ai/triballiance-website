@@ -256,7 +256,9 @@ export default function HomePage() {
 
       {/* FLAGSHIP PROJECT — Full-bleed cinematic */}
       <section className="relative min-h-[80vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 img-placeholder" />
+        <div className="absolute inset-0">
+          <img src="/perak-medtech-bg.jpg" alt="Perak Medtech Park" className="w-full h-full object-cover" />
+        </div>
         <div className="absolute inset-0 bg-[var(--color-black)]/70" />
 
         <div className="container-site relative z-10 py-20">

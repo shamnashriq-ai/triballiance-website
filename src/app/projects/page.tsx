@@ -30,7 +30,9 @@ export default function ProjectsPage() {
     <>
       {/* Hero */}
       <section className="relative min-h-[75vh] flex items-end overflow-hidden">
-        <div className="absolute inset-0 img-placeholder" />
+        <div className="absolute inset-0">
+          <img src="/perak-medtech-bg.jpg" alt="Perak Medtech Park" className="w-full h-full object-cover" />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-black)]/85 via-[var(--color-black)]/35 to-transparent" />
 
         <div className="container-site relative z-10 pb-20 lg:pb-28 pt-40">
@@ -135,7 +137,9 @@ export default function ProjectsPage() {
       </section>
 
       {/* Full-bleed image break */}
-      <div className="h-[50vh] img-placeholder" />
+      <div className="h-[50vh] relative overflow-hidden">
+        <img src="/perak-medtech-bg.jpg" alt="Perak Medtech Park" className="w-full h-full object-cover" />
+      </div>
 
       {/* Coming Soon */}
       <section className="section-padding bg-[var(--color-surface)]">
