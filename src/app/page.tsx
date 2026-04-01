@@ -277,7 +277,7 @@ export default function HomePage() {
             >
               Perak Medtech Park
             </h2>
-            <p className="text-white/45 text-lg max-w-xl leading-relaxed mb-12">
+            <p className="text-white text-lg max-w-xl leading-relaxed mb-12">
               A landmark mixed-use development integrating medical technology,
               commercial spaces, and modern living — transforming Perak&apos;s landscape.
             </p>

@@ -62,7 +62,7 @@ export default function ProjectsPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-white/40 text-[var(--text-small)] mt-4"
+            className="text-white text-[var(--text-small)] mt-4"
           >
             Perak, Malaysia
           </motion.p>
