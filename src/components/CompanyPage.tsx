@@ -1,8 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
+import ScrollReveal, { StaggerChildren, StaggerItem } from "@/components/ScrollReveal";
 import { ArrowLeft } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
-
 interface CompanyPageProps {
   name: string;
   industry: string;
@@ -10,8 +11,6 @@ interface CompanyPageProps {
   overview: string;
   services: string[];
   highlights: { label: string; value: string }[];
-  icon: LucideIcon;
-  color: string;
 }
 
 export default function CompanyPage({
@@ -26,64 +25,88 @@ export default function CompanyPage({
     <>
       <PageHero subtitle={industry} title={name} description={description} />
 
-      <section className="section-padding bg-white">
-        <div className="container-max px-6 lg:px-10">
-          <Link
-            href="/companies"
-            className="inline-flex items-center gap-2 text-[var(--gray-400)] text-sm mb-12 hover:text-[var(--primary)] transition-colors"
-          >
-            <ArrowLeft size={14} /> Back to Companies
-          </Link>
+      <section className="section-padding">
+        <div className="container-site">
+          <ScrollReveal>
+            <Link
+              href="/companies"
+              className="inline-flex items-center gap-2 text-[var(--color-text-muted)] text-[var(--text-small)] mb-16 hover:text-[var(--color-text-primary)] transition-colors duration-200"
+            >
+              <ArrowLeft size={14} /> Back to Companies
+            </Link>
+          </ScrollReveal>
 
-          <div className="grid lg:grid-cols-3 gap-16">
+          <div className="grid lg:grid-cols-3 gap-16 lg:gap-20">
             {/* Main Content */}
             <div className="lg:col-span-2">
-              <div className="accent-line mb-6" />
-              <h3 className="text-2xl md:text-3xl text-[var(--primary)] mb-6">Overview</h3>
-              <p className="text-[var(--gray-500)] leading-relaxed mb-12 text-lg">{overview}</p>
+              <ScrollReveal>
+                <div className="accent-line mb-8" />
+                <h3
+                  className="text-[var(--color-text-primary)] mb-6"
+                  style={{
+                    fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                    fontSize: "var(--text-heading)",
+                    fontWeight: 400,
+                  }}
+                >
+                  Overview
+                </h3>
+                <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg mb-16">
+                  {overview}
+                </p>
+              </ScrollReveal>
 
-              <div className="accent-line mb-6" />
-              <h3 className="text-2xl md:text-3xl text-[var(--primary)] mb-8">
-                Services &amp; Capabilities
-              </h3>
-              <div className="grid sm:grid-cols-2 gap-x-12 gap-y-5">
+              <ScrollReveal>
+                <div className="accent-line mb-8" />
+                <h3
+                  className="text-[var(--color-text-primary)] mb-10"
+                  style={{
+                    fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                    fontSize: "var(--text-heading)",
+                    fontWeight: 400,
+                  }}
+                >
+                  Services &amp; Capabilities
+                </h3>
+              </ScrollReveal>
+              <StaggerChildren className="grid sm:grid-cols-2 gap-x-12 gap-y-0">
                 {services.map((s) => (
-                  <div
-                    key={s}
-                    className="flex items-start gap-3 py-3 border-b border-gray-100"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] mt-2 shrink-0" />
-                    <span className="text-[var(--gray-700)]">{s}</span>
-                  </div>
+                  <StaggerItem key={s}>
+                    <div className="flex items-center gap-4 py-5 border-b border-[var(--color-border)]">
+                      <span className="w-1 h-1 bg-[var(--color-accent)] shrink-0" />
+                      <span className="text-[var(--color-text-secondary)]">{s}</span>
+                    </div>
+                  </StaggerItem>
                 ))}
-              </div>
+              </StaggerChildren>
             </div>
 
             {/* Sidebar */}
             <div>
-              <div className="border border-gray-100 p-8 sticky top-28">
-                <span className="text-[11px] uppercase tracking-[0.2em] text-[var(--accent)] font-medium block mb-6">
-                  Quick Facts
-                </span>
-                <div className="space-y-5">
-                  {highlights.map((h) => (
-                    <div key={h.label}>
-                      <span className="text-xs text-[var(--gray-400)] uppercase tracking-wider block mb-1">
-                        {h.label}
-                      </span>
-                      <span className="font-medium text-[var(--primary)]">{h.value}</span>
-                    </div>
-                  ))}
+              <ScrollReveal delay={0.2}>
+                <div className="border border-[var(--color-border)] p-10 sticky top-32">
+                  <span className="label-text text-[var(--color-accent)] block mb-8">
+                    Quick Facts
+                  </span>
+                  <div className="space-y-6">
+                    {highlights.map((h) => (
+                      <div key={h.label}>
+                        <span className="label-text text-[var(--color-text-muted)] block mb-2">
+                          {h.label}
+                        </span>
+                        <span className="text-[var(--color-text-primary)] font-medium">
+                          {h.value}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="mt-10 pt-10 border-t border-[var(--color-border)]">
+                    <Link href="/contact" className="btn-primary w-full justify-center text-center">
+                      Enquire
+                    </Link>
+                  </div>
                 </div>
-                <div className="mt-8 pt-8 border-t border-gray-100">
-                  <Link
-                    href="/contact"
-                    className="block text-center bg-[var(--primary)] text-white px-6 py-3.5 text-sm font-medium tracking-wide hover:bg-[var(--primary-light)] transition-colors"
-                  >
-                    Enquire About This Company
-                  </Link>
-                </div>
-              </div>
+              </ScrollReveal>
             </div>
           </div>
         </div>

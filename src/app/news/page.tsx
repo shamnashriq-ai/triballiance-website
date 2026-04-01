@@ -1,4 +1,7 @@
+"use client";
+
 import PageHero from "@/components/PageHero";
+import ScrollReveal, { StaggerChildren, StaggerItem } from "@/components/ScrollReveal";
 import { ArrowRight } from "lucide-react";
 
 const articles = [
@@ -7,7 +10,7 @@ const articles = [
     category: "Corporate",
     title: "Triballiance Group Announces Strategic Expansion Plans",
     excerpt:
-      "The group unveils ambitious plans to expand its portfolio across key sectors, reinforcing its position as one of Malaysia\u2019s most dynamic conglomerates.",
+      "The group unveils ambitious plans to expand its portfolio across key sectors, reinforcing its position as one of Malaysia\u2019s most dynamic investment holding companies.",
   },
   {
     date: "February 2026",
@@ -56,53 +59,71 @@ export default function NewsPage() {
       />
 
       <section className="section-padding">
-        <div className="container-max px-6 lg:px-10">
-          {/* Featured article — large */}
-          <article className="grid lg:grid-cols-2 gap-8 lg:gap-16 mb-16 pb-16 border-b border-gray-100">
-            <div className="aspect-[16/10] img-placeholder" />
-            <div className="flex flex-col justify-center">
-              <div className="flex items-center gap-4 mb-4">
-                <span className="text-[11px] uppercase tracking-[0.2em] text-[var(--accent)] font-medium">
-                  {articles[0].category}
-                </span>
-                <span className="text-xs text-[var(--gray-400)]">
-                  {articles[0].date}
-                </span>
-              </div>
-              <h2 className="text-2xl md:text-3xl text-[var(--primary)] mb-4 leading-tight">
-                {articles[0].title}
-              </h2>
-              <p className="text-[var(--gray-500)] leading-relaxed mb-6">
-                {articles[0].excerpt}
-              </p>
-              <span className="editorial-link text-[var(--primary)] inline-flex items-center gap-2">
-                Read article <ArrowRight size={14} />
-              </span>
-            </div>
-          </article>
-
-          {/* Remaining articles — grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14">
-            {articles.slice(1).map((article, i) => (
-              <article key={i} className="group cursor-pointer">
-                <div className="aspect-[16/10] img-placeholder mb-6" />
-                <div className="flex items-center gap-4 mb-3">
-                  <span className="text-[11px] uppercase tracking-[0.2em] text-[var(--accent)] font-medium">
-                    {article.category}
+        <div className="container-site">
+          {/* Featured article */}
+          <ScrollReveal>
+            <article className="grid lg:grid-cols-2 gap-10 lg:gap-20 mb-20 pb-20 border-b border-[var(--color-border)]">
+              <div className="aspect-[16/10] img-placeholder" />
+              <div className="flex flex-col justify-center">
+                <div className="flex items-center gap-5 mb-5">
+                  <span className="label-text text-[var(--color-accent)]">
+                    {articles[0].category}
                   </span>
-                  <span className="text-xs text-[var(--gray-400)]">
-                    {article.date}
+                  <span className="text-[var(--color-text-muted)] text-xs">
+                    {articles[0].date}
                   </span>
                 </div>
-                <h3 className="text-lg font-[family-name:var(--font-playfair)] text-[var(--primary)] mb-3 leading-snug group-hover:text-[var(--accent)] transition-colors">
-                  {article.title}
-                </h3>
-                <p className="text-sm text-[var(--gray-500)] leading-relaxed">
-                  {article.excerpt}
+                <h2
+                  className="text-[var(--color-text-primary)] mb-5 leading-tight"
+                  style={{
+                    fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                    fontSize: "var(--text-heading)",
+                    fontWeight: 400,
+                  }}
+                >
+                  {articles[0].title}
+                </h2>
+                <p className="text-[var(--color-text-secondary)] leading-relaxed mb-8">
+                  {articles[0].excerpt}
                 </p>
-              </article>
+                <span className="editorial-link text-[var(--color-text-primary)] inline-flex items-center gap-2">
+                  Read article <ArrowRight size={14} />
+                </span>
+              </div>
+            </article>
+          </ScrollReveal>
+
+          {/* Grid */}
+          <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+            {articles.slice(1).map((article, i) => (
+              <StaggerItem key={i}>
+                <article className="group cursor-pointer">
+                  <div className="aspect-[16/10] img-placeholder mb-6" />
+                  <div className="flex items-center gap-5 mb-4">
+                    <span className="label-text text-[var(--color-accent)]">
+                      {article.category}
+                    </span>
+                    <span className="text-[var(--color-text-muted)] text-xs">
+                      {article.date}
+                    </span>
+                  </div>
+                  <h3
+                    className="text-[var(--color-text-primary)] mb-3 leading-snug group-hover:text-[var(--color-accent)] transition-colors duration-200"
+                    style={{
+                      fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                      fontSize: "20px",
+                      fontWeight: 500,
+                    }}
+                  >
+                    {article.title}
+                  </h3>
+                  <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed">
+                    {article.excerpt}
+                  </p>
+                </article>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerChildren>
         </div>
       </section>
     </>

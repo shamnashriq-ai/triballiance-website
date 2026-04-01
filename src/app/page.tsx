@@ -1,228 +1,311 @@
+"use client";
+
 import Link from "next/link";
-import SectionHeading from "@/components/SectionHeading";
+import { motion } from "framer-motion";
+import ScrollReveal, { StaggerChildren, StaggerItem } from "@/components/ScrollReveal";
 import { ArrowRight } from "lucide-react";
 
 const companies = [
-  {
-    name: "Tribal Minera",
-    industry: "Mining & Minerals",
-    href: "/companies/tribal-minera",
-  },
-  {
-    name: "Tribal Floria",
-    industry: "Agriculture",
-    href: "/companies/tribal-floria",
-  },
-  {
-    name: "Ideasparq Robotics",
-    industry: "Technology & Robotics",
-    href: "/companies/ideasparq-robotics",
-  },
-  {
-    name: "Wigo Air",
-    industry: "Aviation",
-    href: "/companies/wigo-air",
-  },
-  {
-    name: "Bailaotai Catering",
-    industry: "Food & Beverage",
-    href: "/companies/bailaotai-catering",
-  },
-  {
-    name: "Restoran C Ahmad & Syed",
-    industry: "Food & Beverage",
-    href: "/companies/restoran-c-ahmad-syed",
-  },
+  { name: "Tribal Minera", sector: "Mining & Minerals", href: "/companies/tribal-minera" },
+  { name: "Tribal Floria", sector: "Agriculture", href: "/companies/tribal-floria" },
+  { name: "Ideasparq Robotics", sector: "Technology & Robotics", href: "/companies/ideasparq-robotics" },
+  { name: "Wigo Air", sector: "Aviation", href: "/companies/wigo-air" },
+  { name: "Bailaotai Catering", sector: "Food & Beverage", href: "/companies/bailaotai-catering" },
+  { name: "Restoran C Ahmad & Syed", sector: "Food & Beverage", href: "/companies/restoran-c-ahmad-syed" },
 ];
 
-const stats = [
-  { value: "9+", label: "Companies" },
-  { value: "6", label: "Industries" },
-  { value: "500+", label: "Employees" },
-  { value: "Malaysia", label: "Headquartered" },
+const methodology = [
+  { phase: "Identify", description: "We seek businesses with unrealized potential in sectors critical to Malaysia\u2019s growth." },
+  { phase: "Invest", description: "Strategic capital deployment paired with operational infrastructure and governance." },
+  { phase: "Transform", description: "Hands-on value creation through systems, talent, and market repositioning." },
+  { phase: "Scale", description: "Sustainable growth pathways that compound returns across the portfolio." },
 ];
 
 export default function HomePage() {
   return (
     <>
-      {/* Hero — full-bleed imagery with minimal text */}
-      <section className="relative min-h-screen flex items-end overflow-hidden">
+      {/* HERO — Full viewport, single declaration */}
+      <section className="relative h-screen flex items-end overflow-hidden">
         <div className="absolute inset-0 img-placeholder" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-black)]/90 via-[var(--color-black)]/40 to-transparent" />
 
-        <div className="container-max relative z-10 px-6 lg:px-10 pb-20 lg:pb-28">
-          <span className="text-[11px] uppercase tracking-[0.25em] text-white/50 font-medium block mb-5">
+        <div className="container-site relative z-10 pb-20 lg:pb-32">
+          <motion.span
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            className="label-text text-[var(--color-accent)] block mb-6"
+          >
             Triballiance Group of Companies
-          </span>
-          <h1 className="text-5xl md:text-6xl lg:text-[5.5rem] leading-[1.05] text-white max-w-4xl mb-8">
-            Building Tomorrow,{" "}
-            <span className="italic text-[var(--accent)]">Together.</span>
-          </h1>
-          <p className="text-white/50 text-lg md:text-xl max-w-xl leading-relaxed mb-10">
-            A diversified Malaysian conglomerate driving innovation and
-            sustainable growth across six industries.
-          </p>
-          <div className="flex flex-wrap gap-5">
-            <Link
-              href="/about/group"
-              className="bg-white text-[var(--primary)] px-8 py-4 text-sm font-medium tracking-wide hover:bg-gray-100 transition-colors inline-flex items-center gap-3"
-            >
-              Discover Our Story
-              <ArrowRight size={16} />
+          </motion.span>
+          <motion.h1
+            initial={{ opacity: 0, y: 32 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+            className="text-white max-w-5xl"
+            style={{
+              fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+              fontSize: "var(--text-hero)",
+              fontWeight: 300,
+              lineHeight: 1.0,
+              letterSpacing: "-0.02em",
+            }}
+          >
+            Good to Great.
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.7 }}
+            className="text-white/45 text-lg max-w-lg leading-relaxed mt-8"
+          >
+            A Malaysian multi-sector investment holding company transforming
+            businesses with unrealized potential into industry leaders.
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.9 }}
+            className="flex flex-wrap gap-5 mt-12"
+          >
+            <Link href="/about/group" className="btn-primary">
+              Discover Our Story <ArrowRight size={16} />
             </Link>
             <Link
               href="/companies"
-              className="border border-white/30 text-white px-8 py-4 text-sm font-medium tracking-wide hover:bg-white/10 transition-colors"
+              className="btn-outline"
+              style={{ color: "white", borderColor: "rgba(255,255,255,0.25)" }}
             >
               Our Companies
             </Link>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Stats — clean horizontal strip */}
-      <section className="border-b border-gray-100">
-        <div className="container-max px-6 lg:px-10 py-14">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-16">
-            {stats.map((stat) => (
-              <div key={stat.label}>
-                <div className="text-3xl md:text-4xl font-[family-name:var(--font-playfair)] text-[var(--primary)] mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-[var(--gray-400)] text-sm">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* About Preview — editorial two-column with image */}
+      {/* THESIS — One idea, full viewport */}
       <section className="section-padding">
-        <div className="container-max px-6 lg:px-10">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            {/* Image */}
-            <div className="aspect-[4/5] img-placeholder" />
-
-            {/* Text */}
-            <div>
-              <span className="text-[11px] uppercase tracking-[0.2em] text-[var(--accent)] font-medium block mb-4">
-                About Us
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl text-[var(--primary)] mb-8 leading-tight">
-                A Legacy of Diversified Excellence
-              </h2>
-              <p className="text-[var(--gray-500)] leading-relaxed mb-6 text-lg">
-                Triballiance Group is a Malaysian conglomerate with a portfolio
-                spanning six key industries. Founded on the principles of
-                innovation, integrity, and impact, we bring together companies
-                that shape the future of their respective sectors.
-              </p>
-              <p className="text-[var(--gray-500)] leading-relaxed mb-10">
-                From the depths of mineral extraction to the heights of
-                aviation, from sustainable agriculture to cutting-edge robotics
-                — our diverse portfolio reflects our commitment to building a
-                stronger, more innovative Malaysia.
-              </p>
-              <Link
-                href="/about/group"
-                className="editorial-link text-[var(--primary)]"
-              >
-                Learn more about us
-              </Link>
+        <div className="container-site">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-6 items-start">
+            <div className="lg:col-span-4">
+              <ScrollReveal>
+                <span className="label-text text-[var(--color-accent)] block mb-5">
+                  Investment Thesis
+                </span>
+                <div className="accent-line" />
+              </ScrollReveal>
+            </div>
+            <div className="lg:col-span-8">
+              <ScrollReveal delay={0.1}>
+                <h2
+                  className="text-[var(--color-text-primary)] mb-8"
+                  style={{
+                    fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                    fontSize: "var(--text-display)",
+                    fontWeight: 400,
+                    lineHeight: 1.1,
+                  }}
+                >
+                  We acquire and build businesses that move
+                  Malaysia forward.
+                </h2>
+                <p className="text-[var(--color-text-secondary)] text-lg leading-relaxed max-w-2xl">
+                  Triballiance operates under the &ldquo;Good to Great&rdquo; thesis — identifying
+                  businesses with strong fundamentals and unrealized potential, then applying
+                  strategic capital, governance, and operational excellence to unlock transformative growth.
+                </p>
+              </ScrollReveal>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Companies — minimal list with hover */}
-      <section className="section-padding bg-[var(--gray-50)]">
-        <div className="container-max px-6 lg:px-10">
-          <SectionHeading
-            subtitle="Our Portfolio"
-            title="Companies Under Triballiance"
-            description="Our group spans six industries, each company a leader in its domain."
-          />
-          <div className="max-w-4xl mx-auto">
-            {companies.map((company, i) => (
-              <Link
-                key={company.name}
-                href={company.href}
-                className="group flex items-center justify-between py-6 border-b border-gray-200 hover:border-[var(--accent)] transition-colors"
-              >
-                <div className="flex items-baseline gap-6">
-                  <span className="text-[var(--gray-300)] text-sm font-medium">
+      {/* FULL-BLEED IMAGE BREAK */}
+      <div className="h-[60vh] img-placeholder" />
+
+      {/* METHODOLOGY — Four phases, visualized as structure */}
+      <section className="section-padding bg-[var(--color-surface)]">
+        <div className="container-site">
+          <ScrollReveal>
+            <span className="label-text text-[var(--color-accent)] block mb-5">
+              Our Approach
+            </span>
+            <h2
+              className="text-[var(--color-text-primary)] mb-20"
+              style={{
+                fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                fontSize: "var(--text-heading)",
+                fontWeight: 400,
+                lineHeight: 1.1,
+              }}
+            >
+              Four phases of value creation
+            </h2>
+          </ScrollReveal>
+
+          <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-4 gap-0">
+            {methodology.map((item, i) => (
+              <StaggerItem key={item.phase}>
+                <div className="border-t border-[var(--color-border)] pt-8 pr-8 pb-8">
+                  <span
+                    className="block mb-6 text-[var(--color-text-muted)]"
+                    style={{
+                      fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                      fontSize: "48px",
+                      fontWeight: 300,
+                      lineHeight: 1,
+                    }}
+                  >
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <div>
-                    <span className="text-xl md:text-2xl font-[family-name:var(--font-playfair)] text-[var(--primary)] group-hover:text-[var(--accent)] transition-colors">
-                      {company.name}
-                    </span>
-                    <span className="block text-sm text-[var(--gray-400)] mt-0.5">
-                      {company.industry}
-                    </span>
-                  </div>
+                  <h3
+                    className="text-[var(--color-text-primary)] mb-4"
+                    style={{
+                      fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                      fontSize: "24px",
+                      fontWeight: 500,
+                    }}
+                  >
+                    {item.phase}
+                  </h3>
+                  <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
-                <ArrowRight
-                  size={18}
-                  className="text-[var(--gray-300)] group-hover:text-[var(--accent)] group-hover:translate-x-1 transition-all"
-                />
-              </Link>
+              </StaggerItem>
             ))}
-          </div>
-          <div className="text-center mt-14">
-            <Link
-              href="/companies"
-              className="bg-[var(--primary)] text-white px-8 py-4 text-sm font-medium tracking-wide hover:bg-[var(--primary-light)] transition-colors inline-flex items-center gap-3"
-            >
-              View All Companies <ArrowRight size={16} />
-            </Link>
-          </div>
+          </StaggerChildren>
         </div>
       </section>
 
-      {/* Flagship Project — full-bleed image section */}
-      <section className="relative min-h-[70vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 img-placeholder" />
-        <div className="absolute inset-0 bg-black/60" />
-
-        <div className="container-max relative z-10 px-6 lg:px-10 py-20">
-          <span className="text-[11px] uppercase tracking-[0.2em] text-[var(--accent)] font-medium block mb-4">
-            Flagship Project
-          </span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl text-white mb-6 max-w-2xl">
-            Perak Medtech Park
-          </h2>
-          <p className="text-white/50 text-lg max-w-xl leading-relaxed mb-10">
-            A landmark mixed-use development set to transform Perak&apos;s landscape
-            — integrating medical technology, commercial spaces, and modern
-            living.
-          </p>
-          <Link
-            href="/projects"
-            className="bg-white text-[var(--primary)] px-8 py-4 text-sm font-medium tracking-wide hover:bg-gray-100 transition-colors inline-flex items-center gap-3"
-          >
-            Explore the Project <ArrowRight size={16} />
-          </Link>
-        </div>
-      </section>
-
-      {/* CTA — clean, minimal */}
+      {/* COMPANIES — Minimal list with architectural structure */}
       <section className="section-padding">
-        <div className="container-max px-6 lg:px-10 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-[var(--primary)] mb-6">
-            Let&apos;s Build Something{" "}
-            <span className="italic">Great Together</span>
-          </h2>
-          <p className="text-[var(--gray-500)] text-lg max-w-xl mx-auto leading-relaxed mb-10">
-            Whether you&apos;re exploring partnerships, investment opportunities, or
-            simply want to learn more about Triballiance Group.
-          </p>
-          <Link
-            href="/contact"
-            className="bg-[var(--primary)] text-white px-10 py-4 text-sm font-medium tracking-wide hover:bg-[var(--primary-light)] transition-colors inline-flex items-center gap-3"
-          >
-            Get In Touch <ArrowRight size={16} />
-          </Link>
+        <div className="container-site">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-6">
+            <div className="lg:col-span-4">
+              <ScrollReveal>
+                <span className="label-text text-[var(--color-accent)] block mb-5">
+                  Our Portfolio
+                </span>
+                <h2
+                  className="text-[var(--color-text-primary)] mb-6"
+                  style={{
+                    fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                    fontSize: "var(--text-heading)",
+                    fontWeight: 400,
+                    lineHeight: 1.1,
+                  }}
+                >
+                  Six industries.
+                  <br />
+                  Nine companies.
+                </h2>
+                <p className="text-[var(--color-text-secondary)] leading-relaxed mb-8 max-w-sm">
+                  Each entity operates as a specialist in its domain,
+                  collectively building a diversified foundation for sustained growth.
+                </p>
+                <Link href="/companies" className="editorial-link text-[var(--color-text-primary)]">
+                  View all companies
+                </Link>
+              </ScrollReveal>
+            </div>
+            <div className="lg:col-span-8">
+              <StaggerChildren>
+                {companies.map((company, i) => (
+                  <StaggerItem key={company.name}>
+                    <Link
+                      href={company.href}
+                      className="group flex items-center justify-between py-6 border-b border-[var(--color-border)] hover:border-[var(--color-accent)] transition-colors duration-200"
+                    >
+                      <div className="flex items-baseline gap-8">
+                        <span className="text-[var(--color-text-muted)] text-[var(--text-small)]">
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                        <div>
+                          <span
+                            className="block text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors duration-200"
+                            style={{
+                              fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                              fontSize: "22px",
+                              fontWeight: 500,
+                            }}
+                          >
+                            {company.name}
+                          </span>
+                          <span className="block text-[var(--color-text-muted)] text-[var(--text-small)] mt-1">
+                            {company.sector}
+                          </span>
+                        </div>
+                      </div>
+                      <ArrowRight
+                        size={16}
+                        className="text-[var(--color-text-muted)] group-hover:text-[var(--color-accent)] group-hover:translate-x-1 transition-all duration-200"
+                      />
+                    </Link>
+                  </StaggerItem>
+                ))}
+              </StaggerChildren>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FLAGSHIP PROJECT — Full-bleed cinematic */}
+      <section className="relative min-h-[80vh] flex items-center overflow-hidden">
+        <div className="absolute inset-0 img-placeholder" />
+        <div className="absolute inset-0 bg-[var(--color-black)]/70" />
+
+        <div className="container-site relative z-10 py-20">
+          <ScrollReveal>
+            <span className="label-text text-[var(--color-accent)] block mb-6">
+              Flagship Project
+            </span>
+            <h2
+              className="text-white mb-6 max-w-3xl"
+              style={{
+                fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                fontSize: "var(--text-display)",
+                fontWeight: 400,
+                lineHeight: 1.05,
+              }}
+            >
+              Perak Medtech Park
+            </h2>
+            <p className="text-white/45 text-lg max-w-xl leading-relaxed mb-12">
+              A landmark mixed-use development integrating medical technology,
+              commercial spaces, and modern living — transforming Perak&apos;s landscape.
+            </p>
+            <Link href="/projects" className="btn-primary">
+              Explore the Project <ArrowRight size={16} />
+            </Link>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* CTA — Declarative, restrained */}
+      <section className="section-padding">
+        <div className="container-site text-center">
+          <ScrollReveal>
+            <h2
+              className="text-[var(--color-text-primary)] mb-6"
+              style={{
+                fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                fontSize: "var(--text-display)",
+                fontWeight: 400,
+                lineHeight: 1.1,
+              }}
+            >
+              Let&apos;s build something
+              <br />
+              <em>meaningful</em> together.
+            </h2>
+            <p className="text-[var(--color-text-secondary)] text-lg max-w-lg mx-auto leading-relaxed mb-12">
+              Partnerships, investments, or conversations — we&apos;re always open
+              to those who share our ambition.
+            </p>
+            <Link href="/contact" className="btn-primary">
+              Get In Touch <ArrowRight size={16} />
+            </Link>
+          </ScrollReveal>
         </div>
       </section>
     </>

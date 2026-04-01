@@ -2,28 +2,30 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--primary)] text-white">
-      <div className="container-max px-6 lg:px-10">
+    <footer className="bg-[var(--color-black)] text-white">
+      <div className="container-site">
         {/* Main footer */}
-        <div className="py-16 lg:py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+        <div className="py-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <span className="font-[family-name:var(--font-playfair)] text-2xl tracking-wide block mb-5">
+            <span
+              className="text-[28px] tracking-[0.02em] block mb-6"
+              style={{ fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif", fontWeight: 400 }}
+            >
               Triballiance
             </span>
-            <p className="text-white/50 text-sm leading-relaxed max-w-xs">
-              A diversified Malaysian conglomerate driving innovation across
-              mining, agriculture, robotics, aviation, food &amp; beverage, and
-              property development.
+            <p className="text-white/40 text-[var(--text-small)] leading-relaxed max-w-xs">
+              A Malaysian multi-sector investment holding company operating
+              under the Good to Great investment thesis.
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Navigate */}
           <div>
-            <span className="text-[11px] uppercase tracking-[0.2em] text-white/40 font-medium block mb-5">
+            <span className="label-text text-white/30 block mb-6">
               Navigate
             </span>
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               {[
                 { label: "About the Group", href: "/about/group" },
                 { label: "Our Companies", href: "/companies" },
@@ -34,7 +36,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-white/60 text-sm hover:text-white transition-colors"
+                    className="text-white/50 text-[var(--text-small)] hover:text-white transition-opacity duration-200"
                   >
                     {link.label}
                   </Link>
@@ -45,10 +47,10 @@ export default function Footer() {
 
           {/* Companies */}
           <div>
-            <span className="text-[11px] uppercase tracking-[0.2em] text-white/40 font-medium block mb-5">
-              Companies
+            <span className="label-text text-white/30 block mb-6">
+              Portfolio
             </span>
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               {[
                 "Tribal Minera",
                 "Tribal Floria",
@@ -58,7 +60,7 @@ export default function Footer() {
                 "Restoran C Ahmad & Syed",
               ].map((name) => (
                 <li key={name}>
-                  <span className="text-white/50 text-sm">{name}</span>
+                  <span className="text-white/40 text-[var(--text-small)]">{name}</span>
                 </li>
               ))}
             </ul>
@@ -66,28 +68,26 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <span className="text-[11px] uppercase tracking-[0.2em] text-white/40 font-medium block mb-5">
+            <span className="label-text text-white/30 block mb-6">
               Contact
             </span>
-            <div className="space-y-3 text-sm text-white/50">
+            <div className="space-y-4 text-[var(--text-small)] text-white/40">
               <p>Kuala Lumpur, Malaysia</p>
-              <p>+60 3-XXXX XXXX</p>
               <p>info@triballiance.com</p>
-              <p className="pt-2 text-white/30">Mon – Fri: 9:00 AM – 6:00 PM</p>
             </div>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="py-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white/30 text-xs">
+        <div className="py-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-white/25 text-xs">
             &copy; {new Date().getFullYear()} Triballiance Group. All rights reserved.
           </p>
-          <div className="flex gap-8">
-            <Link href="#" className="text-white/30 text-xs hover:text-white/60 transition-colors">
+          <div className="flex gap-10">
+            <Link href="#" className="text-white/25 text-xs hover:text-white/50 transition-opacity duration-200">
               Privacy Policy
             </Link>
-            <Link href="#" className="text-white/30 text-xs hover:text-white/60 transition-colors">
+            <Link href="#" className="text-white/25 text-xs hover:text-white/50 transition-opacity duration-200">
               Terms of Service
             </Link>
           </div>

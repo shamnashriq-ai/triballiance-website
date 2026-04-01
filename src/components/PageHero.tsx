@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 interface PageHeroProps {
   title: string;
   subtitle?: string;
@@ -6,23 +10,44 @@ interface PageHeroProps {
 
 export default function PageHero({ title, subtitle, description }: PageHeroProps) {
   return (
-    <section className="relative min-h-[60vh] flex items-end overflow-hidden">
-      {/* Full-bleed image placeholder */}
+    <section className="relative min-h-[70vh] flex items-end overflow-hidden">
       <div className="absolute inset-0 img-placeholder" />
-      {/* Dark overlay for text legibility */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-black)]/80 via-[var(--color-black)]/30 to-[var(--color-black)]/10" />
 
-      <div className="container-max relative z-10 px-6 lg:px-10 pb-16 lg:pb-20 pt-32">
+      <div className="container-site relative z-10 pb-20 lg:pb-28 pt-40">
         {subtitle && (
-          <span className="text-[11px] uppercase tracking-[0.2em] text-white/60 font-medium mb-4 block">
+          <motion.span
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="label-text text-[var(--color-accent)] mb-5 block"
+          >
             {subtitle}
-          </span>
+          </motion.span>
         )}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-[family-name:var(--font-playfair)] text-white mb-4 max-w-3xl">
+        <motion.h1
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+          className="text-white max-w-4xl"
+          style={{
+            fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+            fontSize: "var(--text-display)",
+            fontWeight: 400,
+            lineHeight: 1.05,
+          }}
+        >
           {title}
-        </h1>
+        </motion.h1>
         {description && (
-          <p className="text-white/60 text-lg max-w-xl leading-relaxed">{description}</p>
+          <motion.p
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            className="text-white/50 text-lg max-w-xl leading-relaxed mt-6"
+          >
+            {description}
+          </motion.p>
         )}
       </div>
     </section>

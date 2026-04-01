@@ -1,27 +1,27 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
-const inter = Inter({
-  variable: "--font-inter",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
   display: "swap",
   weight: ["300", "400", "500", "600"],
 });
 
 export const metadata: Metadata = {
-  title: "Triballiance Group | Diversified Conglomerate",
+  title: "Triballiance Group | Investment Holding Company",
   description:
-    "Triballiance Group of Companies — a diversified Malaysian conglomerate driving innovation across mining, agriculture, robotics, aviation, F&B, and property development.",
+    "Triballiance Group — a Malaysian multi-sector investment holding company operating under the Good to Great investment thesis.",
 };
 
 export default function RootLayout({
@@ -32,9 +32,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${inter.variable} h-full`}
+      className={`${cormorant.variable} ${dmSans.variable} h-full`}
     >
-      <body className="min-h-full flex flex-col antialiased">
+      <body
+        className="min-h-full flex flex-col antialiased"
+        style={{
+          fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+        }}
+      >
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

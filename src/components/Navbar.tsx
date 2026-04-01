@@ -36,24 +36,25 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-sm border-b border-gray-200/60"
+          ? "bg-[var(--color-bg)]/95 backdrop-blur-sm border-b border-[var(--color-border)]"
           : "bg-transparent"
       }`}
     >
-      <div className="container-max flex items-center justify-between h-20 px-6 lg:px-10">
-        {/* Logo — serif wordmark */}
-        <Link href="/" className="flex items-center gap-3">
+      <div className="container-site flex items-center justify-between h-24">
+        {/* Wordmark */}
+        <Link href="/" className="flex items-center">
           <span
-            className={`font-[family-name:var(--font-playfair)] text-2xl tracking-wide transition-colors duration-500 ${
-              scrolled ? "text-[var(--primary)]" : "text-white"
-            }`}
+            className={`text-[28px] tracking-[0.02em] transition-colors duration-500`}
+            style={{ fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif", fontWeight: 500 }}
           >
-            Triballiance
+            <span className={scrolled ? "text-[var(--color-text-primary)]" : "text-white"}>
+              Triballiance
+            </span>
           </span>
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-10">
+        <div className="hidden lg:flex items-center gap-12">
           {navLinks.map((link) =>
             link.children ? (
               <div
@@ -63,22 +64,22 @@ export default function Navbar() {
                 onMouseLeave={() => setAboutOpen(false)}
               >
                 <button
-                  className={`flex items-center gap-1.5 text-[13px] uppercase tracking-[0.12em] font-medium transition-colors duration-500 ${
+                  className={`flex items-center gap-1.5 label-text transition-colors duration-500 ${
                     scrolled
-                      ? "text-[var(--gray-700)] hover:text-[var(--primary)]"
-                      : "text-white/80 hover:text-white"
+                      ? "text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]"
+                      : "text-white/70 hover:text-white"
                   }`}
                 >
                   {link.label}
-                  <ChevronDown size={12} />
+                  <ChevronDown size={10} />
                 </button>
                 {aboutOpen && (
-                  <div className="absolute top-full left-0 mt-4 w-52 bg-white py-3 shadow-lg border border-gray-100">
+                  <div className="absolute top-full left-0 mt-6 w-56 bg-[var(--color-bg)] py-4 border border-[var(--color-border)]">
                     {link.children.map((child) => (
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block px-5 py-2.5 text-sm text-[var(--gray-500)] hover:text-[var(--primary)] hover:bg-[var(--gray-50)] transition-colors"
+                        className="block px-6 py-3 text-[var(--text-small)] text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] hover:bg-[var(--color-surface)] transition-colors"
                       >
                         {child.label}
                       </Link>
@@ -90,10 +91,10 @@ export default function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
-                className={`text-[13px] uppercase tracking-[0.12em] font-medium transition-colors duration-500 ${
+                className={`label-text transition-colors duration-500 ${
                   scrolled
-                    ? "text-[var(--gray-700)] hover:text-[var(--primary)]"
-                    : "text-white/80 hover:text-white"
+                    ? "text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]"
+                    : "text-white/70 hover:text-white"
                 }`}
               >
                 {link.label}
@@ -105,7 +106,7 @@ export default function Navbar() {
         {/* Mobile Toggle */}
         <button
           className={`lg:hidden transition-colors duration-500 ${
-            scrolled ? "text-[var(--primary)]" : "text-white"
+            scrolled ? "text-[var(--color-text-primary)]" : "text-white"
           }`}
           onClick={() => setMobileOpen(!mobileOpen)}
         >
@@ -115,28 +116,28 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-100 px-6 py-8 space-y-5">
+        <div className="lg:hidden bg-[var(--color-bg)] border-t border-[var(--color-border)] px-6 py-10 space-y-6">
           {navLinks.map((link) =>
             link.children ? (
-              <div key={link.label} className="space-y-3">
+              <div key={link.label} className="space-y-4">
                 <button
                   onClick={() => setAboutOpen(!aboutOpen)}
-                  className="flex items-center gap-1.5 text-[13px] uppercase tracking-[0.12em] font-medium text-[var(--primary)]"
+                  className="flex items-center gap-1.5 label-text text-[var(--color-text-primary)]"
                 >
                   {link.label}
                   <ChevronDown
-                    size={12}
+                    size={10}
                     className={`transition-transform ${aboutOpen ? "rotate-180" : ""}`}
                   />
                 </button>
                 {aboutOpen && (
-                  <div className="pl-4 space-y-3 border-l border-gray-200">
+                  <div className="pl-5 space-y-4 border-l border-[var(--color-border)]">
                     {link.children.map((child) => (
                       <Link
                         key={child.href}
                         href={child.href}
                         onClick={() => setMobileOpen(false)}
-                        className="block text-sm text-[var(--gray-500)] hover:text-[var(--primary)]"
+                        className="block text-[var(--text-small)] text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]"
                       >
                         {child.label}
                       </Link>
@@ -149,7 +150,7 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="block text-[13px] uppercase tracking-[0.12em] font-medium text-[var(--primary)]"
+                className="block label-text text-[var(--color-text-primary)]"
               >
                 {link.label}
               </Link>

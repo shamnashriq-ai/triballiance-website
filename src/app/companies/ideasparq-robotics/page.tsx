@@ -1,5 +1,4 @@
 import CompanyPage from "@/components/CompanyPage";
-import { Bot } from "lucide-react";
 
 export default function IdeasparqRoboticsPage() {
   return (
@@ -7,8 +6,6 @@ export default function IdeasparqRoboticsPage() {
       name="Ideasparq Robotics Sdn Bhd"
       industry="Technology & Robotics"
       description="Pioneering robotics and automation solutions for industrial and commercial applications."
-      icon={Bot}
-      color="from-blue-600 to-blue-800"
       overview="Ideasparq Robotics Sdn Bhd is the technology and innovation engine of Triballiance Group. Specializing in robotics, automation, and AI-driven solutions, Ideasparq develops cutting-edge systems that enhance productivity, safety, and efficiency across industries. From industrial automation to educational robotics programs, Ideasparq is positioning Malaysia at the forefront of the Fourth Industrial Revolution, bridging the gap between human potential and technological advancement."
       services={[
         "Industrial robotics & automation",
