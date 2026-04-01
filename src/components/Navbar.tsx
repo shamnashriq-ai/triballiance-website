@@ -41,15 +41,15 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="container-site flex items-center justify-between h-24">
+      <div className="container-site flex items-center justify-between h-44">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
             src={scrolled ? "/logo-color.png" : "/logo-white.png"}
             alt="Triballiance Group"
-            width={308}
-            height={84}
-            className="h-28 w-auto object-contain transition-all duration-500"
+            width={462}
+            height={126}
+            className="h-[168px] w-auto object-contain transition-all duration-500"
             priority
           />
         </Link>
