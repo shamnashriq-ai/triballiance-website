@@ -112,9 +112,9 @@ export default function AboutGroupPage() {
 
       {/* T Emblem — centered, 60% of section height */}
       <section className="section-padding relative" style={{ minHeight: "320px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-        <div className="relative" style={{ height: "192px", aspectRatio: "261/398" }}>
+        <div className="relative" style={{ height: "192px", aspectRatio: "853/1280" }}>
           <Image
-            src="/t-emblem-color.png"
+            src="/t-emblem-color.jpg"
             alt="Triballiance Group T Emblem"
             fill
             className="object-contain"
