@@ -11,6 +11,7 @@ interface CompanyPageProps {
   overview: string;
   services: string[];
   highlights: { label: string; value: string }[];
+  backgroundImage?: string;
 }
 
 export default function CompanyPage({
@@ -20,10 +21,11 @@ export default function CompanyPage({
   overview,
   services,
   highlights,
+  backgroundImage,
 }: CompanyPageProps) {
   return (
     <>
-      <PageHero subtitle={industry} title={name} description={description} />
+      <PageHero subtitle={industry} title={name} description={description} backgroundImage={backgroundImage} />
 
       <section className="section-padding">
         <div className="container-site">
