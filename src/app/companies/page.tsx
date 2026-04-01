@@ -22,6 +22,7 @@ const featured = [
     description:
       "Sustainable agriculture and plantation management focused on high-value crops and eco-friendly farming practices.",
     href: "/companies/tribal-floria",
+    image: "/tribal-floria-bg.jpg",
   },
   {
     name: "Ideasparq Robotics Sdn Bhd",
