@@ -45,13 +45,11 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo-color.jpg"
+            src={scrolled ? "/logo-color.png" : "/logo-white.png"}
             alt="Triballiance Group"
             width={308}
             height={84}
-            className={`h-14 w-auto object-contain transition-all duration-500 ${
-              scrolled ? "" : "brightness-0 invert"
-            }`}
+            className="h-20 w-auto object-contain transition-all duration-500"
             priority
           />
         </Link>

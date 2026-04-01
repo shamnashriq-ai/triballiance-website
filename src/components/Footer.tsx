@@ -10,11 +10,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Image
-              src="/logo-color.jpg"
+              src="/logo-white.png"
               alt="Triballiance Group"
               width={308}
               height={84}
-              className="h-14 w-auto object-contain brightness-0 invert mb-6"
+              className="h-20 w-auto object-contain mb-6"
             />
             <p className="text-white/40 text-[var(--text-small)] leading-relaxed max-w-xs">
               A Malaysian multi-sector investment holding company operating
