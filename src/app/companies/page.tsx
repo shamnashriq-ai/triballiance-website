@@ -53,6 +53,7 @@ const featured = [
     description:
       "An authentic Malaysian restaurant offering traditional cuisine with a modern twist, celebrating Malaysia\u2019s rich culinary heritage.",
     href: "/companies/restoran-c-ahmad-syed",
+    image: "/restoran-c-ahmad-syed-bg.jpg",
   },
 ];
 
