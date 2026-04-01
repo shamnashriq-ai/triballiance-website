@@ -60,7 +60,7 @@ export default function AboutGroupPage() {
       />
 
       {/* Vision & Mission — two-column architectural layout */}
-      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
+      <section className="section-padding">
         <div className="container-site">
           <div className="grid md:grid-cols-2 gap-16 lg:gap-24">
             <ScrollReveal>
@@ -112,7 +112,7 @@ export default function AboutGroupPage() {
       <div className="h-[50vh] img-placeholder" />
 
       {/* Journey */}
-      <section className="section-padding bg-[var(--color-surface)]" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
+      <section className="section-padding bg-[var(--color-surface)]">
         <div className="container-site">
           <SectionHeading
             subtitle="Our Journey"
@@ -152,7 +152,7 @@ export default function AboutGroupPage() {
       </section>
 
       {/* Core Values */}
-      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
+      <section className="section-padding">
         <div className="container-site">
           <SectionHeading
             subtitle="Our Values"

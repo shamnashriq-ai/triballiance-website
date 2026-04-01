@@ -58,7 +58,7 @@ export default function NewsPage() {
         description="Stay informed about the latest developments across the Triballiance Group."
       />
 
-      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
+      <section className="section-padding">
         <div className="container-site">
           {/* Featured article */}
           <ScrollReveal>

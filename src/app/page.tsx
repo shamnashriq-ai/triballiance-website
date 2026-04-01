@@ -86,7 +86,7 @@ export default function HomePage() {
       </section>
 
       {/* THESIS — One idea, full viewport */}
-      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
+      <section className="section-padding">
         <div className="container-site">
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-6 items-start">
             <div className="lg:col-span-4">
@@ -128,7 +128,7 @@ export default function HomePage() {
       </div>
 
       {/* METHODOLOGY — Four phases, visualized as structure */}
-      <section className="section-padding bg-[var(--color-surface)]" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
+      <section className="section-padding bg-[var(--color-surface)]" >
         <div className="container-site">
           <ScrollReveal>
             <span className="label-text text-[var(--color-accent)] block mb-5">
@@ -183,7 +183,7 @@ export default function HomePage() {
       </section>
 
       {/* COMPANIES — Minimal list with architectural structure */}
-      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
+      <section className="section-padding" >
         <div className="container-site">
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-6">
             <div className="lg:col-span-4">
@@ -289,7 +289,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA — Declarative, restrained */}
-      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
+      <section className="section-padding" >
         <div className="container-site text-center">
           <ScrollReveal>
             <h2

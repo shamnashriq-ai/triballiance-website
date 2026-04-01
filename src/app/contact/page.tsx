@@ -22,7 +22,7 @@ export default function ContactPage() {
         description="Have a question, proposal, or partnership opportunity? We\u2019d love to hear from you."
       />
 
-      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
+      <section className="section-padding">
         <div className="container-site">
           <div className="grid lg:grid-cols-[1fr_340px] gap-16 lg:gap-24">
             {/* Form */}

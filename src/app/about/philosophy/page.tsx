@@ -46,7 +46,7 @@ export default function PhilosophyPage() {
         description="The principles that guide our decisions, shape our culture, and define who we are."
       />
 
-      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
+      <section className="section-padding">
         <div className="container-site">
           <SectionHeading
             subtitle="Our Pillars"
@@ -89,7 +89,7 @@ export default function PhilosophyPage() {
       </section>
 
       {/* Quote */}
-      <section className="section-padding bg-[var(--color-surface)]" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
+      <section className="section-padding bg-[var(--color-surface)]">
         <div className="container-site text-center">
           <ScrollReveal>
             <blockquote

@@ -30,7 +30,7 @@ export default function LeadershipPage() {
         description="The leadership driving Triballiance Group\u2019s vision of diversified excellence across Malaysia."
       />
 
-      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
+      <section className="section-padding">
         <div className="container-site">
           <div className="max-w-4xl mx-auto">
             {leaders.map((leader, i) => (
