@@ -68,7 +68,7 @@ export default function AboutGroupPage() {
                 Our Vision
               </span>
               <h3
-                className="text-[var(--color-text-primary)] mb-6 heading-hover"
+                className="text-[var(--color-text-primary)] mb-6"
                 style={{
                   fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                   fontSize: "var(--text-heading)",
@@ -89,7 +89,7 @@ export default function AboutGroupPage() {
                 Our Mission
               </span>
               <h3
-                className="text-[var(--color-text-primary)] mb-6 heading-hover"
+                className="text-[var(--color-text-primary)] mb-6"
                 style={{
                   fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                   fontSize: "var(--text-heading)",

@@ -29,7 +29,7 @@ export default function ContactPage() {
             <ScrollReveal>
               <div className="accent-line mb-8" />
               <h3
-                className="text-[var(--color-text-primary)] mb-10 heading-hover"
+                className="text-[var(--color-text-primary)] mb-10"
                 style={{
                   fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                   fontSize: "var(--text-heading)",

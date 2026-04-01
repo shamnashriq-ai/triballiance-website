@@ -69,7 +69,7 @@ export default function PhilosophyPage() {
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <h3
-                    className="heading-hover text-[var(--color-text-primary)] mb-4"
+                    className="text-[var(--color-text-primary)] mb-4"
                     style={{
                       fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                       fontSize: "22px",

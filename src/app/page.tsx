@@ -44,7 +44,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-            className="max-w-5xl heading-hover"
+            className="max-w-5xl"
             style={{
               fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
               fontSize: "var(--text-hero)",
@@ -100,7 +100,7 @@ export default function HomePage() {
             <div className="lg:col-span-8">
               <ScrollReveal delay={0.1}>
                 <h2
-                  className="text-[var(--color-text-primary)] mb-8 heading-hover"
+                  className="text-[var(--color-text-primary)] mb-8"
                   style={{
                     fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                     fontSize: "var(--text-display)",
@@ -135,7 +135,7 @@ export default function HomePage() {
               Our Approach
             </span>
             <h2
-              className="text-[var(--color-text-primary)] mb-20 heading-hover"
+              className="text-[var(--color-text-primary)] mb-20"
               style={{
                 fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                 fontSize: "var(--text-heading)",
@@ -192,7 +192,7 @@ export default function HomePage() {
                   Our Portfolio
                 </span>
                 <h2
-                  className="text-[var(--color-text-primary)] mb-6 heading-hover"
+                  className="text-[var(--color-text-primary)] mb-6"
                   style={{
                     fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                     fontSize: "var(--text-heading)",
@@ -267,7 +267,7 @@ export default function HomePage() {
               Flagship Project
             </span>
             <h2
-              className="text-white mb-6 max-w-3xl heading-hover"
+              className="text-white mb-6 max-w-3xl"
               style={{
                 fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                 fontSize: "var(--text-display)",
@@ -293,7 +293,7 @@ export default function HomePage() {
         <div className="container-site text-center">
           <ScrollReveal>
             <h2
-              className="text-[var(--color-text-primary)] mb-6 heading-hover"
+              className="text-[var(--color-text-primary)] mb-6"
               style={{
                 fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                 fontSize: "var(--text-display)",

@@ -42,7 +42,7 @@ export default function LeadershipPage() {
                       {leader.role}
                     </span>
                     <h3
-                      className="heading-hover text-[var(--color-text-primary)] mb-6"
+                      className="text-[var(--color-text-primary)] mb-6"
                       style={{
                         fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                         fontSize: "var(--text-heading)",

@@ -75,16 +75,6 @@ main > * + * {
   margin-top: 25px;
 }
 
-/* Heading hover — switch to menu typeface (DM Sans) on hover */
-.heading-hover {
-  transition: font-family 0.3s ease, letter-spacing 0.3s ease;
-  cursor: default;
-}
-
-.heading-hover:hover {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif !important;
-}
-
 /* Section spacing */
 .section-padding {
   padding-top: var(--space-section);
