@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
 import ScrollReveal, { StaggerChildren, StaggerItem } from "@/components/ScrollReveal";
@@ -57,6 +58,7 @@ export default function AboutGroupPage() {
         subtitle="About Us"
         title="The Triballiance Group"
         description="A diversified Malaysian investment holding company united by the Good to Great thesis."
+        backgroundImage="/group-bg.jpg"
       />
 
       {/* Vision & Mission — two-column architectural layout */}
@@ -108,8 +110,28 @@ export default function AboutGroupPage() {
         </div>
       </section>
 
+      {/* Logo with T mark */}
+      <section className="section-padding">
+        <div className="container-site flex justify-center">
+          <div className="flex items-center gap-6 lg:gap-8">
+            <Image
+              src="/logo-color.png"
+              alt="Triballiance Group"
+              width={600}
+              height={300}
+              className="w-auto"
+              style={{ height: "80px" }}
+              priority
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Full-bleed image break */}
-      <div className="h-[50vh] img-placeholder" />
+      <div
+        className="h-[50vh] bg-cover bg-center"
+        style={{ backgroundImage: "url(/group-bg.jpg)" }}
+      />
 
       {/* Journey */}
       <section className="section-padding bg-[var(--color-surface)]">

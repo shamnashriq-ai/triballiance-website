@@ -6,12 +6,20 @@ interface PageHeroProps {
   title: string;
   subtitle?: string;
   description?: string;
+  backgroundImage?: string;
 }
 
-export default function PageHero({ title, subtitle, description }: PageHeroProps) {
+export default function PageHero({ title, subtitle, description, backgroundImage }: PageHeroProps) {
   return (
     <section className="relative min-h-[70vh] flex items-end overflow-hidden">
-      <div className="absolute inset-0 img-placeholder" />
+      {backgroundImage ? (
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        />
+      ) : (
+        <div className="absolute inset-0 img-placeholder" />
+      )}
       <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-black)]/80 via-[var(--color-black)]/30 to-[var(--color-black)]/10" />
 
       <div className="container-site relative z-10 pb-[calc(80px+25px)] lg:pb-[calc(112px+25px)] pt-40">
