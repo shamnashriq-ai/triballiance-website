@@ -281,6 +281,7 @@ export default function HomePage() {
                 fontWeight: 400,
                 lineHeight: 1.05,
                 marginBottom: 0,
+                color: "#ffffff",
               }}
             >
               Perak Medtech Park
