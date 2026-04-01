@@ -111,7 +111,7 @@ export default function AboutGroupPage() {
       </section>
 
       {/* T Emblem — centered, 60% of section height */}
-      <section className="section-padding relative" style={{ minHeight: "320px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+      <section className="section-padding relative" style={{ minHeight: "320px", display: "flex", justifyContent: "center", alignItems: "center", paddingTop: "50px" }}>
         <div className="relative" style={{ height: "230px", aspectRatio: "910/1063" }}>
           <Image
             src="/t-emblem-color.png"
