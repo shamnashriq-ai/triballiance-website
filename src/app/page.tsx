@@ -31,7 +31,7 @@ export default function HomePage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-black)]/90 via-[var(--color-black)]/40 to-transparent" />
 
-        <div className="container-site relative z-10 pb-[25vh]">
+        <div className="container-site relative z-10 pb-[50vh]">
           <motion.span
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
