@@ -71,6 +71,7 @@ export default function CompaniesPage() {
         subtitle="Our Portfolio"
         title="Our Companies"
         description="Nine companies across six industries — each a specialist in its domain, collectively building Malaysia\u2019s future."
+        backgroundImage="/companies-header-bg.jpg"
       />
 
       {/* Featured Companies — editorial alternating layout */}
