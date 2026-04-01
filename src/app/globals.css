@@ -70,11 +70,17 @@ a {
   color: inherit;
 }
 
+/* Gap between adjacent page segments */
+main > * + * {
+  margin-top: 25px;
+}
+
 /* Section spacing */
 .section-padding {
   padding-top: var(--space-section);
   padding-bottom: var(--space-section);
 }
+
 
 @media (max-width: 768px) {
   .section-padding {
