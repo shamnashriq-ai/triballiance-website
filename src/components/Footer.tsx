@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-[var(--color-black)] text-white">
       <div className="container-site">
         {/* Main footer */}
-        <div className="py-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+        <div className="pt-[136px] pb-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Image
