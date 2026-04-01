@@ -16,12 +16,12 @@
   --text-hero: clamp(56px, 8vw, 120px);
   --text-display: clamp(36px, 5vw, 72px);
   --text-heading: clamp(24px, 3vw, 40px);
-  --text-body: 17px;
+  --text-body: 16px;
   --text-small: 14px;
   --text-label: 11px;
 
-  --space-section: 100px;
-  --space-container: 1280px;
+  --space-section: 120px;
+  --space-container: 1200px;
 }
 
 @theme inline {
@@ -57,6 +57,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+  line-height: 1.7;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   font-weight: 500;
@@ -81,11 +85,21 @@ main > * + * {
   padding-bottom: var(--space-section);
 }
 
+@media (max-width: 1024px) {
+  .section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
 
 @media (max-width: 768px) {
   .section-padding {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  p {
+    font-size: 15px;
   }
 }
 
@@ -97,10 +111,17 @@ main > * + * {
   padding-right: 48px;
 }
 
+@media (max-width: 1024px) {
+  .container-site {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
 @media (max-width: 768px) {
   .container-site {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 

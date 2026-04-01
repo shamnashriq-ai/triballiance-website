@@ -49,7 +49,7 @@ export default function ProjectsPage() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="label-text text-[var(--color-accent)] block mb-5"
+            className="label-text text-[var(--color-accent)] block mb-3"
           >
             Flagship Project
           </motion.span>
@@ -57,12 +57,13 @@ export default function ProjectsPage() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-            className="text-white max-w-4xl"
+            className="text-white max-w-4xl text-left"
             style={{
               fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
               fontSize: "var(--text-display)",
               fontWeight: 400,
               lineHeight: 1.05,
+              marginBottom: 0,
             }}
           >
             Perak Medtech Park
@@ -71,30 +72,31 @@ export default function ProjectsPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-white text-[var(--text-small)] mt-4"
+            className="text-white text-[var(--text-small)] mt-4 text-left"
           >
             Perak, Malaysia
           </motion.p>
         </div>
       </section>
 
-      {/* Project Details — architectural two-column */}
+      {/* Project Details — two-column left-aligned */}
       <section className="section-padding">
         <div className="container-site">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
             <ScrollReveal>
               <div className="accent-line mb-8" />
               <h2
-                className="text-[var(--color-text-primary)] mb-8"
+                className="text-[var(--color-text-primary)]"
                 style={{
                   fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                   fontSize: "var(--text-heading)",
                   fontWeight: 400,
+                  marginBottom: 0,
                 }}
               >
                 Transforming Perak&apos;s Landscape
               </h2>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg mb-6">
+              <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg mt-4 mb-4">
                 Perak Medtech Park is Triballiance Group&apos;s flagship mixed-use
                 development — a visionary project set to transform the landscape
                 of Perak. This landmark integrates medical technology facilities,
@@ -111,7 +113,7 @@ export default function ProjectsPage() {
             <StaggerChildren className="space-y-0">
               {features.map((f, i) => (
                 <StaggerItem key={f.label}>
-                  <div className="flex gap-8 pb-8 pt-8 border-b border-[var(--color-border)] first:pt-0 last:border-0 last:pb-0">
+                  <div className="flex gap-8 py-10 max-md:py-8 border-b border-[var(--color-border)] first:pt-0 last:border-0 last:pb-0">
                     <span
                       className="text-[var(--color-text-muted)] shrink-0"
                       style={{
@@ -124,10 +126,10 @@ export default function ProjectsPage() {
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <div>
-                      <h4 className="text-[var(--color-text-primary)] font-medium mb-2">
+                      <h4 className="text-[var(--color-text-primary)] font-medium" style={{ marginBottom: 0 }}>
                         {f.label}
                       </h4>
-                      <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed">
+                      <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed mt-[10px]">
                         {f.description}
                       </p>
                     </div>
@@ -137,10 +139,12 @@ export default function ProjectsPage() {
             </StaggerChildren>
           </div>
 
-          <ScrollReveal className="mt-20 text-center">
-            <Link href="/contact" className="btn-primary">
-              Enquire About This Project <ArrowRight size={16} />
-            </Link>
+          <ScrollReveal className="mt-[56px]">
+            <div className="flex justify-center">
+              <Link href="/contact" className="btn-primary">
+                Enquire About This Project <ArrowRight size={16} />
+              </Link>
+            </div>
           </ScrollReveal>
         </div>
       </section>
@@ -161,7 +165,7 @@ export default function ProjectsPage() {
 
       {/* Coming Soon */}
       <section className="section-padding bg-[var(--color-surface)]">
-        <div className="container-site text-center">
+        <div className="container-site">
           <SectionHeading
             subtitle="Stay Tuned"
             title="More Projects Coming Soon"

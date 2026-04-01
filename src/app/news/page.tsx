@@ -62,10 +62,10 @@ export default function NewsPage() {
         <div className="container-site">
           {/* Featured article */}
           <ScrollReveal>
-            <article className="grid lg:grid-cols-2 gap-10 lg:gap-20 mb-20 pb-20 border-b border-[var(--color-border)]">
+            <article className="grid lg:grid-cols-2 gap-10 lg:gap-20 mb-[56px] pb-[56px] border-b border-[var(--color-border)]">
               <div className="aspect-[16/10] img-placeholder" />
-              <div className="flex flex-col justify-center">
-                <div className="flex items-center gap-5 mb-5">
+              <div className="flex flex-col justify-center text-left">
+                <div className="flex items-center gap-5 mb-3">
                   <span className="label-text text-[var(--color-accent)]">
                     {articles[0].category}
                   </span>
@@ -74,19 +74,20 @@ export default function NewsPage() {
                   </span>
                 </div>
                 <h2
-                  className="text-[var(--color-text-primary)] mb-5 leading-tight"
+                  className="text-[var(--color-text-primary)] leading-tight"
                   style={{
                     fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                     fontSize: "var(--text-heading)",
                     fontWeight: 400,
+                    marginBottom: 0,
                   }}
                 >
                   {articles[0].title}
                 </h2>
-                <p className="text-[var(--color-text-secondary)] leading-relaxed mb-8">
+                <p className="text-[var(--color-text-secondary)] leading-relaxed mt-3 mb-0">
                   {articles[0].excerpt}
                 </p>
-                <span className="editorial-link text-[var(--color-text-primary)] inline-flex items-center gap-2">
+                <span className="editorial-link text-[var(--color-text-primary)] inline-flex items-center gap-2 mt-7">
                   Read article <ArrowRight size={14} />
                 </span>
               </div>
@@ -94,12 +95,12 @@ export default function NewsPage() {
           </ScrollReveal>
 
           {/* Grid */}
-          <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+          <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-md:gap-4">
             {articles.slice(1).map((article, i) => (
               <StaggerItem key={i}>
-                <article className="group cursor-pointer">
+                <article className="group cursor-pointer text-left p-8 max-md:p-6">
                   <div className="aspect-[16/10] img-placeholder mb-6" />
-                  <div className="flex items-center gap-5 mb-4">
+                  <div className="flex items-center gap-5 mb-2">
                     <span className="label-text text-[var(--color-accent)]">
                       {article.category}
                     </span>
@@ -108,16 +109,17 @@ export default function NewsPage() {
                     </span>
                   </div>
                   <h3
-                    className="text-[var(--color-text-primary)] mb-3 leading-snug group-hover:text-[var(--color-accent)] transition-colors duration-200"
+                    className="text-[var(--color-text-primary)] leading-snug group-hover:text-[var(--color-accent)] transition-colors duration-200"
                     style={{
                       fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                       fontSize: "20px",
                       fontWeight: 500,
+                      marginBottom: 0,
                     }}
                   >
                     {article.title}
                   </h3>
-                  <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed">
+                  <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed mt-3">
                     {article.excerpt}
                   </p>
                 </article>

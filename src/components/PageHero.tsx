@@ -29,7 +29,7 @@ export default function PageHero({ title, subtitle, description, backgroundImage
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="label-text text-[var(--color-accent)] mb-5 block"
+            className="label-text text-[var(--color-accent)] mb-3 block"
           >
             {subtitle}
           </motion.span>
@@ -38,13 +38,14 @@ export default function PageHero({ title, subtitle, description, backgroundImage
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-          className="text-white max-w-4xl"
+          className="text-white max-w-4xl text-left"
           style={{
             fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
             fontSize: "var(--text-display)",
             fontWeight: 400,
             lineHeight: 1.05,
             color: "#FFFFFF",
+            marginBottom: 0,
           }}
         >
           {title}
@@ -54,7 +55,7 @@ export default function PageHero({ title, subtitle, description, backgroundImage
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-            className="text-white/50 text-lg max-w-xl leading-relaxed mt-6"
+            className="text-white/50 text-lg max-w-xl leading-relaxed mt-5 text-left"
           >
             {description}
           </motion.p>

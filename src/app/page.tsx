@@ -36,7 +36,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-            className="label-text text-[var(--color-accent)] block mb-6"
+            className="label-text text-[var(--color-accent)] block mb-3"
           >
             Triballiance Group of Companies
           </motion.span>
@@ -44,7 +44,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-            className="max-w-5xl"
+            className="max-w-5xl text-left"
             style={{
               fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
               fontSize: "var(--text-hero)",
@@ -52,6 +52,7 @@ export default function HomePage() {
               lineHeight: 1.0,
               letterSpacing: "-0.02em",
               color: "#FFFFFF",
+              marginBottom: 0,
             }}
           >
             Good to Great.
@@ -60,7 +61,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.7 }}
-            className="text-white/45 text-lg max-w-lg leading-relaxed mt-8"
+            className="text-white/45 text-lg max-w-lg leading-relaxed mt-5 text-left"
           >
             A Malaysian multi-sector investment holding company transforming
             businesses with unrealized potential into industry leaders.
@@ -69,7 +70,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.9 }}
-            className="flex flex-wrap gap-5 mt-12"
+            className="flex flex-wrap gap-4 mt-7"
           >
             <Link href="/about/group" className="btn-primary">
               Discover Our Story <ArrowRight size={16} />
@@ -85,13 +86,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* THESIS — One idea, full viewport */}
+      {/* THESIS — One idea, two-column left-aligned */}
       <section className="section-padding">
         <div className="container-site">
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-6 items-start">
             <div className="lg:col-span-4">
               <ScrollReveal>
-                <span className="label-text text-[var(--color-accent)] block mb-5">
+                <span className="label-text text-[var(--color-accent)] block mb-3">
                   Investment Thesis
                 </span>
                 <div className="accent-line" />
@@ -100,18 +101,19 @@ export default function HomePage() {
             <div className="lg:col-span-8">
               <ScrollReveal delay={0.1}>
                 <h2
-                  className="text-[var(--color-text-primary)] mb-8"
+                  className="text-[var(--color-text-primary)]"
                   style={{
                     fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                     fontSize: "var(--text-display)",
                     fontWeight: 400,
                     lineHeight: 1.1,
+                    marginBottom: 0,
                   }}
                 >
                   We acquire and build businesses that move
                   Malaysia forward.
                 </h2>
-                <p className="text-[var(--color-text-secondary)] text-lg leading-relaxed max-w-2xl">
+                <p className="text-[var(--color-text-secondary)] text-lg leading-relaxed max-w-2xl mt-4">
                   Triballiance operates under the &ldquo;Good to Great&rdquo; thesis — identifying
                   businesses with strong fundamentals and unrealized potential, then applying
                   strategic capital, governance, and operational excellence to unlock transformative growth.
@@ -127,32 +129,35 @@ export default function HomePage() {
         <img src="/hero-bg.jpg" alt="" className="w-full h-full object-cover" />
       </div>
 
-      {/* METHODOLOGY — Four phases, visualized as structure */}
+      {/* METHODOLOGY — Four phases */}
       <section className="section-padding bg-[var(--color-surface)]" >
         <div className="container-site">
           <ScrollReveal>
-            <span className="label-text text-[var(--color-accent)] block mb-5">
-              Our Approach
-            </span>
-            <h2
-              className="text-[var(--color-text-primary)] mb-20"
-              style={{
-                fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                fontSize: "var(--text-heading)",
-                fontWeight: 400,
-                lineHeight: 1.1,
-              }}
-            >
-              Four phases of value creation
-            </h2>
+            <div className="text-center mb-[56px] max-md:mb-10">
+              <span className="label-text text-[var(--color-accent)] block mb-3">
+                Our Approach
+              </span>
+              <h2
+                className="text-[var(--color-text-primary)]"
+                style={{
+                  fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                  fontSize: "var(--text-heading)",
+                  fontWeight: 400,
+                  lineHeight: 1.1,
+                  marginBottom: 0,
+                }}
+              >
+                Four phases of value creation
+              </h2>
+            </div>
           </ScrollReveal>
 
-          <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-4 gap-0">
+          <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 max-md:gap-8">
             {methodology.map((item, i) => (
               <StaggerItem key={item.phase}>
-                <div className="border-t border-[var(--color-border)] pt-8 pr-8 pb-8">
+                <div className="border-t border-[var(--color-border)] pt-8">
                   <span
-                    className="block mb-6 text-[var(--color-text-muted)]"
+                    className="block mb-2 text-[var(--color-text-muted)]"
                     style={{
                       fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                       fontSize: "48px",
@@ -163,16 +168,17 @@ export default function HomePage() {
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <h3
-                    className="text-[var(--color-text-primary)] mb-4"
+                    className="text-[var(--color-text-primary)]"
                     style={{
                       fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                       fontSize: "24px",
                       fontWeight: 500,
+                      marginBottom: 0,
                     }}
                   >
                     {item.phase}
                   </h3>
-                  <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed">
+                  <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed mt-[10px]">
                     {item.description}
                   </p>
                 </div>
@@ -182,29 +188,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* COMPANIES — Minimal list with architectural structure */}
+      {/* COMPANIES — two-column left-aligned layout */}
       <section className="section-padding" >
         <div className="container-site">
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-6">
             <div className="lg:col-span-4">
               <ScrollReveal>
-                <span className="label-text text-[var(--color-accent)] block mb-5">
+                <span className="label-text text-[var(--color-accent)] block mb-3">
                   Our Portfolio
                 </span>
                 <h2
-                  className="text-[var(--color-text-primary)] mb-6"
+                  className="text-[var(--color-text-primary)]"
                   style={{
                     fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                     fontSize: "var(--text-heading)",
                     fontWeight: 400,
                     lineHeight: 1.1,
+                    marginBottom: 0,
                   }}
                 >
                   Six industries.
                   <br />
                   Nine companies.
                 </h2>
-                <p className="text-[var(--color-text-secondary)] leading-relaxed mb-8 max-w-sm">
+                <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4 mb-7 max-w-sm">
                   Each entity operates as a specialist in its domain,
                   collectively building a diversified foundation for sustained growth.
                 </p>
@@ -261,58 +268,66 @@ export default function HomePage() {
         </div>
         <div className="absolute inset-0 bg-[var(--color-black)]/70" />
 
-        <div className="container-site relative z-10 py-[105px]">
+        <div className="container-site relative z-10" style={{ paddingTop: "120px", paddingBottom: "120px" }}>
           <ScrollReveal>
-            <span className="label-text text-[var(--color-accent)] block mb-6">
+            <span className="label-text text-[var(--color-accent)] block mb-3">
               Flagship Project
             </span>
             <h2
-              className="text-white mb-6 max-w-3xl"
+              className="text-white max-w-3xl text-left"
               style={{
                 fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                 fontSize: "var(--text-display)",
                 fontWeight: 400,
                 lineHeight: 1.05,
+                marginBottom: 0,
               }}
             >
               Perak Medtech Park
             </h2>
-            <p className="text-white text-lg max-w-xl leading-relaxed mb-12">
+            <p className="text-white text-lg max-w-xl leading-relaxed mt-4 text-left mb-0">
               A landmark mixed-use development integrating medical technology,
               commercial spaces, and modern living — transforming Perak&apos;s landscape.
             </p>
-            <Link href="/projects" className="btn-primary">
-              Explore the Project <ArrowRight size={16} />
-            </Link>
+            <div className="mt-7">
+              <Link href="/projects" className="btn-primary">
+                Explore the Project <ArrowRight size={16} />
+              </Link>
+            </div>
           </ScrollReveal>
         </div>
       </section>
 
-      {/* CTA — Declarative, restrained */}
+      {/* CTA — centered */}
       <section className="section-padding" >
-        <div className="container-site text-center">
-          <ScrollReveal>
-            <h2
-              className="text-[var(--color-text-primary)] mb-6"
-              style={{
-                fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                fontSize: "var(--text-display)",
-                fontWeight: 400,
-                lineHeight: 1.1,
-              }}
-            >
-              Let&apos;s build something
-              <br />
-              <em>meaningful</em> together.
-            </h2>
-            <p className="text-[var(--color-text-secondary)] text-lg max-w-xl mx-auto leading-relaxed text-center mb-20">
-              Partnerships, investments, or conversations — we&apos;re always open
-              to those who share our ambition.
-            </p>
-            <Link href="/contact" className="btn-primary">
-              Get In Touch <ArrowRight size={16} />
-            </Link>
-          </ScrollReveal>
+        <div className="container-site">
+          <div className="text-center">
+            <ScrollReveal>
+              <h2
+                className="text-[var(--color-text-primary)]"
+                style={{
+                  fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                  fontSize: "var(--text-display)",
+                  fontWeight: 400,
+                  lineHeight: 1.1,
+                  marginBottom: 0,
+                }}
+              >
+                Let&apos;s build something
+                <br />
+                <em>meaningful</em> together.
+              </h2>
+              <p className="text-[var(--color-text-secondary)] text-lg max-w-[600px] mx-auto leading-relaxed mt-5 mb-0">
+                Partnerships, investments, or conversations — we&apos;re always open
+                to those who share our ambition.
+              </p>
+              <div className="flex justify-center gap-4 mt-7">
+                <Link href="/contact" className="btn-primary">
+                  Get In Touch <ArrowRight size={16} />
+                </Link>
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
     </>

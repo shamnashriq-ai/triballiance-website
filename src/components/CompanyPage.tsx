@@ -32,7 +32,7 @@ export default function CompanyPage({
           <ScrollReveal>
             <Link
               href="/companies"
-              className="inline-flex items-center gap-2 text-[var(--color-text-muted)] text-[var(--text-small)] mb-16 hover:text-[var(--color-text-primary)] transition-colors duration-200"
+              className="inline-flex items-center gap-2 text-[var(--color-text-muted)] text-[var(--text-small)] mb-[56px] hover:text-[var(--color-text-primary)] transition-colors duration-200"
             >
               <ArrowLeft size={14} /> Back to Companies
             </Link>
@@ -44,16 +44,17 @@ export default function CompanyPage({
               <ScrollReveal>
                 <div className="accent-line mb-8" />
                 <h3
-                  className="text-[var(--color-text-primary)] mb-6"
+                  className="text-[var(--color-text-primary)]"
                   style={{
                     fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                     fontSize: "var(--text-heading)",
                     fontWeight: 400,
+                    marginBottom: 0,
                   }}
                 >
                   Overview
                 </h3>
-                <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg mb-16">
+                <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg mt-3 mb-[56px]">
                   {overview}
                 </p>
               </ScrollReveal>
@@ -61,7 +62,7 @@ export default function CompanyPage({
               <ScrollReveal>
                 <div className="accent-line mb-8" />
                 <h3
-                  className="text-[var(--color-text-primary)] mb-10"
+                  className="text-[var(--color-text-primary)] mb-[56px]"
                   style={{
                     fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                     fontSize: "var(--text-heading)",
@@ -86,7 +87,7 @@ export default function CompanyPage({
             {/* Sidebar */}
             <div>
               <ScrollReveal delay={0.2}>
-                <div className="border border-[var(--color-border)] p-10 sticky top-32">
+                <div className="border border-[var(--color-border)] p-8 md:p-8 max-md:p-6 sticky top-32">
                   <span className="label-text text-[var(--color-accent)] block mb-8">
                     Quick Facts
                   </span>

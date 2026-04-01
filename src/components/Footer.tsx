@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-[var(--color-black)] text-white">
       <div className="container-site">
         {/* Main footer */}
-        <div className="pt-[136px] pb-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+        <div className="pt-16 pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Image
@@ -16,14 +16,14 @@ export default function Footer() {
               height={84}
               className="h-28 w-auto object-contain mb-6"
             />
-            <p className="text-white/40 text-[var(--text-small)] leading-relaxed max-w-xs">
+            <p className="text-white/40 text-[var(--text-small)] leading-relaxed max-w-xs text-left">
               A Malaysian multi-sector investment holding company operating
               under the Good to Great investment thesis.
             </p>
           </div>
 
           {/* Navigate */}
-          <div>
+          <div className="text-left">
             <span className="label-text text-white/30 block mb-6">
               Navigate
             </span>
@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
 
           {/* Companies */}
-          <div>
+          <div className="text-left">
             <span className="label-text text-white/30 block mb-6">
               Portfolio
             </span>
@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="text-left">
             <span className="label-text text-white/30 block mb-6">
               Contact
             </span>

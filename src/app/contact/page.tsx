@@ -29,11 +29,12 @@ export default function ContactPage() {
             <ScrollReveal>
               <div className="accent-line mb-8" />
               <h3
-                className="text-[var(--color-text-primary)] mb-10"
+                className="text-[var(--color-text-primary)]"
                 style={{
                   fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                   fontSize: "var(--text-heading)",
                   fontWeight: 400,
+                  marginBottom: 0,
                 }}
               >
                 Send Us a Message
@@ -41,16 +42,17 @@ export default function ContactPage() {
               {submitted ? (
                 <div className="py-20 text-center">
                   <h4
-                    className="text-[var(--color-text-primary)] mb-4"
+                    className="text-[var(--color-text-primary)]"
                     style={{
                       fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                       fontSize: "var(--text-heading)",
                       fontWeight: 400,
+                      marginBottom: 0,
                     }}
                   >
                     Thank You
                   </h4>
-                  <p className="text-[var(--color-text-secondary)]">
+                  <p className="text-[var(--color-text-secondary)] mt-3">
                     Your message has been sent. Our team will respond within 1-2 business days.
                   </p>
                 </div>
@@ -60,7 +62,7 @@ export default function ContactPage() {
                     e.preventDefault();
                     setSubmitted(true);
                   }}
-                  className="space-y-8"
+                  className="space-y-8 mt-[56px] max-md:mt-10"
                 >
                   <div className="grid sm:grid-cols-2 gap-8">
                     <div>
@@ -133,7 +135,7 @@ export default function ContactPage() {
 
             {/* Contact Info */}
             <ScrollReveal delay={0.2}>
-              <div className="sticky top-32">
+              <div className="sticky top-32 text-left">
                 <span className="label-text text-[var(--color-accent)] block mb-8">
                   Contact Information
                 </span>

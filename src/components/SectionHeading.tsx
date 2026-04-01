@@ -20,10 +20,10 @@ export default function SectionHeading({
   const centered = align === "center";
 
   return (
-    <ScrollReveal className={`mb-20 ${centered ? "text-center" : ""}`}>
+    <ScrollReveal className={`mb-[56px] md:mb-[56px] max-md:mb-10 ${centered ? "text-center" : ""}`}>
       {subtitle && (
         <span
-          className={`label-text mb-5 block ${
+          className={`label-text mb-3 block ${
             light ? "text-white/40" : "text-[var(--color-accent)]"
           }`}
         >
@@ -36,6 +36,7 @@ export default function SectionHeading({
           fontSize: "var(--text-heading)",
           fontWeight: 400,
           lineHeight: 1.1,
+          marginBottom: 0,
         }}
         className={`${light ? "text-white" : "text-[var(--color-text-primary)]"}`}
       >
@@ -43,7 +44,7 @@ export default function SectionHeading({
       </h2>
       {description && (
         <p
-          className={`max-w-2xl text-[var(--text-body)] leading-relaxed mt-5 ${
+          className={`max-w-[600px] text-[var(--text-body)] leading-relaxed mt-5 ${
             centered ? "mx-auto" : ""
           } ${light ? "text-white/50" : "text-[var(--color-text-secondary)]"}`}
         >

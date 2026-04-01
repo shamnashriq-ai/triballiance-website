@@ -37,21 +37,22 @@ export default function LeadershipPage() {
               <ScrollReveal key={i} delay={i * 0.1}>
                 <div className="grid md:grid-cols-[300px_1fr] gap-10 lg:gap-16 py-16 border-b border-[var(--color-border)] last:border-0 first:pt-0">
                   <div className="aspect-[3/4] img-placeholder max-h-[380px]" />
-                  <div className="flex flex-col justify-center">
-                    <span className="label-text text-[var(--color-accent)] block mb-4">
+                  <div className="flex flex-col justify-center text-left">
+                    <span className="label-text text-[var(--color-accent)] block mb-3">
                       {leader.role}
                     </span>
                     <h3
-                      className="text-[var(--color-text-primary)] mb-6"
+                      className="text-[var(--color-text-primary)]"
                       style={{
                         fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                         fontSize: "var(--text-heading)",
                         fontWeight: 400,
+                        marginBottom: 0,
                       }}
                     >
                       {leader.name}
                     </h3>
-                    <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
+                    <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg mt-3">
                       {leader.bio}
                     </p>
                   </div>
@@ -67,28 +68,30 @@ export default function LeadershipPage() {
         <div className="absolute inset-0 img-placeholder" />
         <div className="absolute inset-0 bg-[var(--color-black)]/75" />
 
-        <div className="container-site relative z-10 py-24 text-center">
-          <ScrollReveal>
-            <span className="label-text text-[var(--color-accent)] block mb-8">
-              Leadership Philosophy
-            </span>
-            <blockquote
-              className="text-white max-w-3xl mx-auto"
-              style={{
-                fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                fontSize: "var(--text-heading)",
-                fontWeight: 400,
-                lineHeight: 1.3,
-                fontStyle: "italic",
-              }}
-            >
-              &ldquo;We don&apos;t just build companies — we build ecosystems of
-              opportunity that empower people and communities to thrive.&rdquo;
-            </blockquote>
-            <p className="label-text text-[var(--color-accent)] mt-10">
-              Shamsul Nashriq Norhisham, Group CEO
-            </p>
-          </ScrollReveal>
+        <div className="container-site relative z-10" style={{ paddingTop: "120px", paddingBottom: "120px" }}>
+          <div className="text-center">
+            <ScrollReveal>
+              <span className="label-text text-[var(--color-accent)] block mb-3">
+                Leadership Philosophy
+              </span>
+              <blockquote
+                className="text-white max-w-3xl mx-auto"
+                style={{
+                  fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                  fontSize: "var(--text-heading)",
+                  fontWeight: 400,
+                  lineHeight: 1.3,
+                  fontStyle: "italic",
+                }}
+              >
+                &ldquo;We don&apos;t just build companies — we build ecosystems of
+                opportunity that empower people and communities to thrive.&rdquo;
+              </blockquote>
+              <p className="label-text text-[var(--color-accent)] mt-7">
+                Shamsul Nashriq Norhisham, Group CEO
+              </p>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
     </>

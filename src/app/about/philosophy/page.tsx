@@ -53,12 +53,12 @@ export default function PhilosophyPage() {
             title="Six Pillars of Excellence"
             description="Foundational principles underpinning everything we do across all companies and ventures."
           />
-          <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-16">
+          <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-md:gap-8">
             {pillars.map((p, i) => (
               <StaggerItem key={p.title}>
                 <div className="border-t border-[var(--color-border)] pt-8">
                   <span
-                    className="block mb-6 text-[var(--color-text-muted)]"
+                    className="block mb-2 text-[var(--color-text-muted)]"
                     style={{
                       fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                       fontSize: "48px",
@@ -69,16 +69,17 @@ export default function PhilosophyPage() {
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <h3
-                    className="text-[var(--color-text-primary)] mb-4"
+                    className="text-[var(--color-text-primary)]"
                     style={{
                       fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                       fontSize: "22px",
                       fontWeight: 500,
+                      marginBottom: 0,
                     }}
                   >
                     {p.title}
                   </h3>
-                  <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed">
+                  <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed mt-[10px]">
                     {p.description}
                   </p>
                 </div>
@@ -105,7 +106,7 @@ export default function PhilosophyPage() {
               &ldquo;A company is only as strong as the values it refuses to
               compromise on. At Triballiance, our values are our compass.&rdquo;
             </blockquote>
-            <div className="accent-line mx-auto mt-12" />
+            <div className="accent-line mx-auto mt-7" />
           </ScrollReveal>
         </div>
       </section>
