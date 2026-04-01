@@ -80,7 +80,7 @@ export default function Navbar() {
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block px-6 py-3 text-[var(--text-small)] text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] hover:bg-[var(--color-surface)] transition-colors"
+                        className="block px-6 py-3 label-text text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] hover:bg-[var(--color-surface)] transition-colors"
                       >
                         {child.label}
                       </Link>
@@ -138,7 +138,7 @@ export default function Navbar() {
                         key={child.href}
                         href={child.href}
                         onClick={() => setMobileOpen(false)}
-                        className="block text-[var(--text-small)] text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]"
+                        className="block label-text text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]"
                       >
                         {child.label}
                       </Link>
