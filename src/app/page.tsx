@@ -26,7 +26,9 @@ export default function HomePage() {
     <>
       {/* HERO — Full viewport, single declaration */}
       <section className="relative h-screen flex items-end overflow-hidden">
-        <div className="absolute inset-0 img-placeholder" />
+        <div className="absolute inset-0">
+          <img src="/hero-bg.jpg" alt="" className="w-full h-full object-cover" />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-black)]/90 via-[var(--color-black)]/40 to-transparent" />
 
         <div className="container-site relative z-10 pb-20 lg:pb-32">
@@ -120,7 +122,9 @@ export default function HomePage() {
       </section>
 
       {/* FULL-BLEED IMAGE BREAK */}
-      <div className="h-[60vh] img-placeholder" />
+      <div className="h-[60vh] relative overflow-hidden">
+        <img src="/hero-bg.jpg" alt="" className="w-full h-full object-cover" />
+      </div>
 
       {/* METHODOLOGY — Four phases, visualized as structure */}
       <section className="section-padding bg-[var(--color-surface)]">
