@@ -60,7 +60,7 @@ export default function AboutGroupPage() {
       />
 
       {/* Vision & Mission — two-column architectural layout */}
-      <section className="section-padding">
+      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
         <div className="container-site">
           <div className="grid md:grid-cols-2 gap-16 lg:gap-24">
             <ScrollReveal>
@@ -68,7 +68,7 @@ export default function AboutGroupPage() {
                 Our Vision
               </span>
               <h3
-                className="text-[var(--color-text-primary)] mb-6"
+                className="text-[var(--color-text-primary)] mb-6 heading-hover"
                 style={{
                   fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                   fontSize: "var(--text-heading)",
@@ -89,7 +89,7 @@ export default function AboutGroupPage() {
                 Our Mission
               </span>
               <h3
-                className="text-[var(--color-text-primary)] mb-6"
+                className="text-[var(--color-text-primary)] mb-6 heading-hover"
                 style={{
                   fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                   fontSize: "var(--text-heading)",
@@ -112,7 +112,7 @@ export default function AboutGroupPage() {
       <div className="h-[50vh] img-placeholder" />
 
       {/* Journey */}
-      <section className="section-padding bg-[var(--color-surface)]">
+      <section className="section-padding bg-[var(--color-surface)]" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
         <div className="container-site">
           <SectionHeading
             subtitle="Our Journey"
@@ -152,7 +152,7 @@ export default function AboutGroupPage() {
       </section>
 
       {/* Core Values */}
-      <section className="section-padding">
+      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
         <div className="container-site">
           <SectionHeading
             subtitle="Our Values"

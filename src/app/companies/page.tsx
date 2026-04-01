@@ -67,7 +67,7 @@ export default function CompaniesPage() {
       />
 
       {/* Featured Companies — editorial alternating layout */}
-      <section className="section-padding">
+      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
         <div className="container-site">
           <StaggerChildren>
             {featured.map((company, i) => (
@@ -108,7 +108,7 @@ export default function CompaniesPage() {
       </section>
 
       {/* Associated Companies */}
-      <section className="section-padding bg-[var(--color-surface)]">
+      <section className="section-padding bg-[var(--color-surface)]" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
         <div className="container-site">
           <SectionHeading
             subtitle="Also Part of the Group"

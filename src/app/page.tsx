@@ -31,7 +31,7 @@ export default function HomePage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-black)]/90 via-[var(--color-black)]/40 to-transparent" />
 
-        <div className="container-site relative z-10 pb-[50vh]">
+        <div className="container-site relative z-10 pb-[calc(50vh+25px)]">
           <motion.span
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-            className="max-w-5xl"
+            className="max-w-5xl heading-hover"
             style={{
               fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
               fontSize: "var(--text-hero)",
@@ -86,7 +86,7 @@ export default function HomePage() {
       </section>
 
       {/* THESIS — One idea, full viewport */}
-      <section className="section-padding">
+      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
         <div className="container-site">
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-6 items-start">
             <div className="lg:col-span-4">
@@ -100,7 +100,7 @@ export default function HomePage() {
             <div className="lg:col-span-8">
               <ScrollReveal delay={0.1}>
                 <h2
-                  className="text-[var(--color-text-primary)] mb-8"
+                  className="text-[var(--color-text-primary)] mb-8 heading-hover"
                   style={{
                     fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                     fontSize: "var(--text-display)",
@@ -128,14 +128,14 @@ export default function HomePage() {
       </div>
 
       {/* METHODOLOGY — Four phases, visualized as structure */}
-      <section className="section-padding bg-[var(--color-surface)]">
+      <section className="section-padding bg-[var(--color-surface)]" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
         <div className="container-site">
           <ScrollReveal>
             <span className="label-text text-[var(--color-accent)] block mb-5">
               Our Approach
             </span>
             <h2
-              className="text-[var(--color-text-primary)] mb-20"
+              className="text-[var(--color-text-primary)] mb-20 heading-hover"
               style={{
                 fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                 fontSize: "var(--text-heading)",
@@ -183,7 +183,7 @@ export default function HomePage() {
       </section>
 
       {/* COMPANIES — Minimal list with architectural structure */}
-      <section className="section-padding">
+      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
         <div className="container-site">
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-6">
             <div className="lg:col-span-4">
@@ -192,7 +192,7 @@ export default function HomePage() {
                   Our Portfolio
                 </span>
                 <h2
-                  className="text-[var(--color-text-primary)] mb-6"
+                  className="text-[var(--color-text-primary)] mb-6 heading-hover"
                   style={{
                     fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                     fontSize: "var(--text-heading)",
@@ -261,13 +261,13 @@ export default function HomePage() {
         </div>
         <div className="absolute inset-0 bg-[var(--color-black)]/70" />
 
-        <div className="container-site relative z-10 py-20">
+        <div className="container-site relative z-10 py-[105px]">
           <ScrollReveal>
             <span className="label-text text-[var(--color-accent)] block mb-6">
               Flagship Project
             </span>
             <h2
-              className="text-white mb-6 max-w-3xl"
+              className="text-white mb-6 max-w-3xl heading-hover"
               style={{
                 fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                 fontSize: "var(--text-display)",
@@ -289,11 +289,11 @@ export default function HomePage() {
       </section>
 
       {/* CTA — Declarative, restrained */}
-      <section className="section-padding">
+      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
         <div className="container-site text-center">
           <ScrollReveal>
             <h2
-              className="text-[var(--color-text-primary)] mb-6"
+              className="text-[var(--color-text-primary)] mb-6 heading-hover"
               style={{
                 fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                 fontSize: "var(--text-display)",

@@ -14,7 +14,7 @@ export default function PageHero({ title, subtitle, description }: PageHeroProps
       <div className="absolute inset-0 img-placeholder" />
       <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-black)]/80 via-[var(--color-black)]/30 to-[var(--color-black)]/10" />
 
-      <div className="container-site relative z-10 pb-20 lg:pb-28 pt-40">
+      <div className="container-site relative z-10 pb-[calc(80px+25px)] lg:pb-[calc(112px+25px)] pt-40">
         {subtitle && (
           <motion.span
             initial={{ opacity: 0, y: 16 }}
@@ -29,7 +29,7 @@ export default function PageHero({ title, subtitle, description }: PageHeroProps
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-          className="text-white max-w-4xl"
+          className="text-white max-w-4xl heading-hover"
           style={{
             fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
             fontSize: "var(--text-display)",

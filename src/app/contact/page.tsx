@@ -22,14 +22,14 @@ export default function ContactPage() {
         description="Have a question, proposal, or partnership opportunity? We\u2019d love to hear from you."
       />
 
-      <section className="section-padding">
+      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
         <div className="container-site">
           <div className="grid lg:grid-cols-[1fr_340px] gap-16 lg:gap-24">
             {/* Form */}
             <ScrollReveal>
               <div className="accent-line mb-8" />
               <h3
-                className="text-[var(--color-text-primary)] mb-10"
+                className="text-[var(--color-text-primary)] mb-10 heading-hover"
                 style={{
                   fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                   fontSize: "var(--text-heading)",

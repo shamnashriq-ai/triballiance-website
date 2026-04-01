@@ -44,7 +44,7 @@ export default function ProjectsPage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-black)]/85 via-[var(--color-black)]/35 to-transparent" />
 
-        <div className="container-site relative z-10 pb-20 lg:pb-28 pt-40">
+        <div className="container-site relative z-10 pb-[calc(80px+25px)] lg:pb-[calc(112px+25px)] pt-40">
           <motion.span
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export default function ProjectsPage() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-            className="text-white max-w-4xl"
+            className="text-white max-w-4xl heading-hover"
             style={{
               fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
               fontSize: "var(--text-display)",
@@ -79,13 +79,13 @@ export default function ProjectsPage() {
       </section>
 
       {/* Project Details — architectural two-column */}
-      <section className="section-padding">
+      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
         <div className="container-site">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
             <ScrollReveal>
               <div className="accent-line mb-8" />
               <h2
-                className="text-[var(--color-text-primary)] mb-8"
+                className="text-[var(--color-text-primary)] mb-8 heading-hover"
                 style={{
                   fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                   fontSize: "var(--text-heading)",
@@ -160,7 +160,7 @@ export default function ProjectsPage() {
       </div>
 
       {/* Coming Soon */}
-      <section className="section-padding bg-[var(--color-surface)]">
+      <section className="section-padding bg-[var(--color-surface)]" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
         <div className="container-site text-center">
           <SectionHeading
             subtitle="Stay Tuned"

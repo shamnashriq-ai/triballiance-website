@@ -58,7 +58,7 @@ export default function NewsPage() {
         description="Stay informed about the latest developments across the Triballiance Group."
       />
 
-      <section className="section-padding">
+      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
         <div className="container-site">
           {/* Featured article */}
           <ScrollReveal>
@@ -74,7 +74,7 @@ export default function NewsPage() {
                   </span>
                 </div>
                 <h2
-                  className="text-[var(--color-text-primary)] mb-5 leading-tight"
+                  className="heading-hover text-[var(--color-text-primary)] mb-5 leading-tight"
                   style={{
                     fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                     fontSize: "var(--text-heading)",
@@ -108,7 +108,7 @@ export default function NewsPage() {
                     </span>
                   </div>
                   <h3
-                    className="text-[var(--color-text-primary)] mb-3 leading-snug group-hover:text-[var(--color-accent)] transition-colors duration-200"
+                    className="heading-hover text-[var(--color-text-primary)] mb-3 leading-snug group-hover:text-[var(--color-accent)] transition-colors duration-200"
                     style={{
                       fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                       fontSize: "20px",

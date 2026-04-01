@@ -46,7 +46,7 @@ export default function PhilosophyPage() {
         description="The principles that guide our decisions, shape our culture, and define who we are."
       />
 
-      <section className="section-padding">
+      <section className="section-padding" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
         <div className="container-site">
           <SectionHeading
             subtitle="Our Pillars"
@@ -69,7 +69,7 @@ export default function PhilosophyPage() {
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <h3
-                    className="text-[var(--color-text-primary)] mb-4"
+                    className="heading-hover text-[var(--color-text-primary)] mb-4"
                     style={{
                       fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                       fontSize: "22px",
@@ -89,7 +89,7 @@ export default function PhilosophyPage() {
       </section>
 
       {/* Quote */}
-      <section className="section-padding bg-[var(--color-surface)]">
+      <section className="section-padding bg-[var(--color-surface)]" style={{ paddingTop: "calc(var(--space-section) + 25px)", paddingBottom: "calc(var(--space-section) + 25px)" }}>
         <div className="container-site text-center">
           <ScrollReveal>
             <blockquote

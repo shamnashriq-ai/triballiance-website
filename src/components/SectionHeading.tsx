@@ -37,7 +37,7 @@ export default function SectionHeading({
           fontWeight: 400,
           lineHeight: 1.1,
         }}
-        className={light ? "text-white" : "text-[var(--color-text-primary)]"}
+        className={`heading-hover ${light ? "text-white" : "text-[var(--color-text-primary)]"}`}
       >
         {title}
       </h2>
