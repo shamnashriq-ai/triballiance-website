@@ -38,6 +38,7 @@ const featured = [
     description:
       "Aviation services and air travel solutions connecting communities and businesses, with a commitment to safety and reliability.",
     href: "/companies/wigo-air",
+    image: "/wigo-air-bg.jpg",
   },
   {
     name: "Bailaotai Catering Sdn Bhd",
