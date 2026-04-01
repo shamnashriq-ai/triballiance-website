@@ -110,20 +110,16 @@ export default function AboutGroupPage() {
         </div>
       </section>
 
-      {/* Logo with T mark */}
-      <section className="section-padding">
-        <div className="container-site flex justify-center">
-          <div className="flex items-center gap-6 lg:gap-8">
-            <Image
-              src="/logo-color.png"
-              alt="Triballiance Group"
-              width={600}
-              height={300}
-              className="w-auto"
-              style={{ height: "80px" }}
-              priority
-            />
-          </div>
+      {/* T Emblem — centered, 60% of section height */}
+      <section className="section-padding relative" style={{ minHeight: "320px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <div className="relative" style={{ height: "192px", aspectRatio: "261/398" }}>
+          <Image
+            src="/t-emblem-color.png"
+            alt="Triballiance Group T Emblem"
+            fill
+            className="object-contain"
+            priority
+          />
         </div>
       </section>
 
