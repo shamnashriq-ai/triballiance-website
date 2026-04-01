@@ -47,9 +47,9 @@ export default function Navbar() {
           <Image
             src="/logo-color.jpg"
             alt="Triballiance Group"
-            width={220}
-            height={60}
-            className={`h-10 w-auto object-contain transition-all duration-500 ${
+            width={308}
+            height={84}
+            className={`h-14 w-auto object-contain transition-all duration-500 ${
               scrolled ? "" : "brightness-0 invert"
             }`}
             priority

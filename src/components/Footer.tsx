@@ -12,9 +12,9 @@ export default function Footer() {
             <Image
               src="/logo-color.jpg"
               alt="Triballiance Group"
-              width={220}
-              height={60}
-              className="h-10 w-auto object-contain brightness-0 invert mb-6"
+              width={308}
+              height={84}
+              className="h-14 w-auto object-contain brightness-0 invert mb-6"
             />
             <p className="text-white/40 text-[var(--text-small)] leading-relaxed max-w-xs">
               A Malaysian multi-sector investment holding company operating
