@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,12 +9,13 @@ export default function Footer() {
         <div className="py-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <span
-              className="text-[28px] tracking-[0.02em] block mb-6"
-              style={{ fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif", fontWeight: 400 }}
-            >
-              Triballiance
-            </span>
+            <Image
+              src="/logo-color.jpg"
+              alt="Triballiance Group"
+              width={220}
+              height={60}
+              className="h-10 w-auto object-contain brightness-0 invert mb-6"
+            />
             <p className="text-white/40 text-[var(--text-small)] leading-relaxed max-w-xs">
               A Malaysian multi-sector investment holding company operating
               under the Good to Great investment thesis.

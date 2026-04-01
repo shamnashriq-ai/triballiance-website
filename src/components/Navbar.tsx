@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 
@@ -41,16 +42,18 @@ export default function Navbar() {
       }`}
     >
       <div className="container-site flex items-center justify-between h-24">
-        {/* Wordmark */}
+        {/* Logo */}
         <Link href="/" className="flex items-center">
-          <span
-            className={`text-[28px] tracking-[0.02em] transition-colors duration-500`}
-            style={{ fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif", fontWeight: 500 }}
-          >
-            <span className={scrolled ? "text-[var(--color-text-primary)]" : "text-white"}>
-              Triballiance
-            </span>
-          </span>
+          <Image
+            src="/logo-color.jpg"
+            alt="Triballiance Group"
+            width={220}
+            height={60}
+            className={`h-10 w-auto object-contain transition-all duration-500 ${
+              scrolled ? "" : "brightness-0 invert"
+            }`}
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
