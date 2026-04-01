@@ -46,6 +46,7 @@ const featured = [
     description:
       "Premium catering and food service operations serving corporate clients, events, and institutions with exceptional quality.",
     href: "/companies/bailaotai-catering",
+    image: "/bailaotai-catering-bg.jpg",
   },
   {
     name: "Restoran C Ahmad & Syed",
