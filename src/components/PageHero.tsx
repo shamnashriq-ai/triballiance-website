@@ -43,6 +43,7 @@ export default function PageHero({ title, subtitle, description, backgroundImage
             fontSize: "var(--text-display)",
             fontWeight: 400,
             lineHeight: 1.05,
+            color: "#FFFFFF",
           }}
         >
           {title}
