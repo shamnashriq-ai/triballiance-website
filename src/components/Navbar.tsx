@@ -49,7 +49,7 @@ export default function Navbar() {
             alt="Triballiance Group"
             width={308}
             height={84}
-            className="h-20 w-auto object-contain transition-all duration-500"
+            className="h-28 w-auto object-contain transition-all duration-500"
             priority
           />
         </Link>

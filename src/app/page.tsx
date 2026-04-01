@@ -44,13 +44,14 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-            className="text-white max-w-5xl"
+            className="max-w-5xl"
             style={{
               fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
               fontSize: "var(--text-hero)",
               fontWeight: 300,
               lineHeight: 1.0,
               letterSpacing: "-0.02em",
+              color: "#FFFFFF",
             }}
           >
             Good to Great.
