@@ -31,7 +31,16 @@ export default function ProjectsPage() {
       {/* Hero */}
       <section className="relative min-h-[75vh] flex items-end overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/perak-medtech-bg.jpg" alt="Perak Medtech Park" className="w-full h-full object-cover" />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+            poster="/perak-medtech-bg.jpg"
+          >
+            <source src="/perak-medtech-bg-video.mp4" type="video/mp4" />
+          </video>
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-black)]/85 via-[var(--color-black)]/35 to-transparent" />
 
@@ -136,9 +145,18 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      {/* Full-bleed image break */}
+      {/* Full-bleed video break */}
       <div className="h-[50vh] relative overflow-hidden">
-        <img src="/perak-medtech-bg.jpg" alt="Perak Medtech Park" className="w-full h-full object-cover" />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
+          poster="/perak-medtech-bg.jpg"
+        >
+          <source src="/perak-medtech-bg-video.mp4" type="video/mp4" />
+        </video>
       </div>
 
       {/* Coming Soon */}
