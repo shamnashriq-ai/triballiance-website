@@ -303,7 +303,7 @@ export default function HomePage() {
               <br />
               <em>meaningful</em> together.
             </h2>
-            <p className="text-[var(--color-text-secondary)] text-lg max-w-lg mx-auto leading-relaxed mb-12">
+            <p className="text-[var(--color-text-secondary)] text-lg max-w-xl mx-auto leading-relaxed text-center mb-20">
               Partnerships, investments, or conversations — we&apos;re always open
               to those who share our ambition.
             </p>
