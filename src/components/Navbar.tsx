@@ -75,7 +75,8 @@ export default function Navbar() {
                   <ChevronDown size={10} />
                 </button>
                 {aboutOpen && (
-                  <div className="absolute top-full left-0 mt-6 w-56 bg-[var(--color-bg)] py-4 border border-[var(--color-border)]">
+                  <div className="absolute top-full left-0 pt-4 w-56">
+                    <div className="bg-[var(--color-bg)] py-4 border border-[var(--color-border)]">
                     {link.children.map((child) => (
                       <Link
                         key={child.href}
@@ -85,6 +86,7 @@ export default function Navbar() {
                         {child.label}
                       </Link>
                     ))}
+                    </div>
                   </div>
                 )}
               </div>
