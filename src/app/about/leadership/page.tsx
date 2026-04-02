@@ -26,7 +26,7 @@ const leaders = [
   {
     name: "Faizah Ishak",
     role: "Chief Financial Officer",
-    image: null,
+    image: "/leader-faizah.jpg",
     bio: "Bio coming soon.",
   },
   {
