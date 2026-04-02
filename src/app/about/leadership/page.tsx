@@ -35,6 +35,12 @@ const leaders = [
     image: null,
     bio: "Bio coming soon.",
   },
+  {
+    name: "Faizul",
+    role: "Head of Development",
+    image: "/leader-faizul.jpg",
+    bio: "Bio coming soon.",
+  },
 ];
 
 export default function LeadershipPage() {
