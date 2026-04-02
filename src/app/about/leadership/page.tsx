@@ -20,7 +20,7 @@ const leaders = [
   {
     name: "Mohd Azzart Moideen",
     role: "Group Chief Corporate Strategy",
-    image: null,
+    image: "/leader-azzart.jpg",
     bio: "Bio coming soon.",
   },
   {
