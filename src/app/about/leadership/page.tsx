@@ -32,7 +32,7 @@ const leaders = [
   {
     name: "Yusni Yussof",
     role: "Chief Legal Officer",
-    image: null,
+    image: "/leader-yusni.jpg",
     bio: "Bio coming soon.",
   },
   {
