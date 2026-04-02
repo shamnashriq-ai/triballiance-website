@@ -29,7 +29,7 @@ export default function PageHero({ title, subtitle, description, backgroundImage
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="label-text text-[var(--color-accent)] mb-3 block"
+            className="label-text text-[var(--color-accent)] mb-3 block md:text-xs md:tracking-[0.18em] md:uppercase"
           >
             {subtitle}
           </motion.span>
@@ -38,10 +38,9 @@ export default function PageHero({ title, subtitle, description, backgroundImage
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-          className="text-white max-w-4xl text-left"
+          className="text-white max-w-4xl text-left md:text-left text-4xl md:text-6xl lg:text-7xl"
           style={{
             fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-            fontSize: "var(--text-display)",
             fontWeight: 400,
             lineHeight: 1.05,
             color: "#FFFFFF",
@@ -55,7 +54,7 @@ export default function PageHero({ title, subtitle, description, backgroundImage
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-            className="text-white/50 text-lg max-w-xl leading-relaxed mt-5 text-left"
+            className="text-white/50 text-lg max-w-xl leading-relaxed mt-5 text-left md:text-left md:leading-[1.7]"
           >
             {description}
           </motion.p>

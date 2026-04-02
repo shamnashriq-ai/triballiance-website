@@ -53,12 +53,12 @@ export default function PhilosophyPage() {
             title="Six Pillars of Excellence"
             description="Foundational principles underpinning everything we do across all companies and ventures."
           />
-          <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-md:gap-8">
+          <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-6 max-md:gap-8">
             {pillars.map((p, i) => (
               <StaggerItem key={p.title}>
-                <div className="border-t border-[var(--color-border)] pt-8">
+                <div className="border-t border-[var(--color-border)] pt-8 md:text-left">
                   <span
-                    className="block mb-2 text-[var(--color-text-muted)]"
+                    className="block mb-2 md:mt-4 text-[var(--color-text-muted)]"
                     style={{
                       fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                       fontSize: "48px",
@@ -69,17 +69,16 @@ export default function PhilosophyPage() {
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <h3
-                    className="text-[var(--color-text-primary)]"
+                    className="text-[var(--color-text-primary)] text-xl md:text-xl lg:text-2xl md:mt-2"
                     style={{
                       fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                      fontSize: "22px",
                       fontWeight: 500,
                       marginBottom: 0,
                     }}
                   >
                     {p.title}
                   </h3>
-                  <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed mt-[10px]">
+                  <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed mt-[10px] md:mt-2 md:text-sm md:leading-[1.7]">
                     {p.description}
                   </p>
                 </div>
@@ -94,10 +93,9 @@ export default function PhilosophyPage() {
         <div className="container-site text-center">
           <ScrollReveal>
             <blockquote
-              className="text-[var(--color-text-primary)] max-w-3xl mx-auto text-center"
+              className="text-[var(--color-text-primary)] max-w-3xl mx-auto text-center md:text-center text-2xl md:text-4xl lg:text-5xl"
               style={{
                 fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                fontSize: "var(--text-heading)",
                 fontWeight: 400,
                 lineHeight: 1.3,
                 fontStyle: "italic",

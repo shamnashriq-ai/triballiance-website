@@ -32,7 +32,7 @@ export default function CompanyPage({
           <ScrollReveal>
             <Link
               href="/companies"
-              className="inline-flex items-center gap-2 text-[var(--color-text-muted)] text-[var(--text-small)] mb-[56px] hover:text-[var(--color-text-primary)] transition-colors duration-200"
+              className="inline-flex items-center gap-2 text-[var(--color-text-muted)] text-[var(--text-small)] mb-[56px] md:mb-14 hover:text-[var(--color-text-primary)] transition-colors duration-200"
             >
               <ArrowLeft size={14} /> Back to Companies
             </Link>
@@ -44,17 +44,16 @@ export default function CompanyPage({
               <ScrollReveal>
                 <div className="accent-line mb-8" />
                 <h3
-                  className="text-[var(--color-text-primary)]"
+                  className="text-[var(--color-text-primary)] text-xl md:text-xl lg:text-2xl"
                   style={{
                     fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                    fontSize: "var(--text-heading)",
                     fontWeight: 400,
                     marginBottom: 0,
                   }}
                 >
                   Overview
                 </h3>
-                <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg mt-3 mb-[56px]">
+                <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg mt-3 mb-[56px] md:mb-14 md:text-base md:leading-[1.75]">
                   {overview}
                 </p>
               </ScrollReveal>
@@ -62,10 +61,9 @@ export default function CompanyPage({
               <ScrollReveal>
                 <div className="accent-line mb-8" />
                 <h3
-                  className="text-[var(--color-text-primary)] mb-[56px]"
+                  className="text-[var(--color-text-primary)] mb-[56px] md:mb-14 text-xl md:text-xl lg:text-2xl"
                   style={{
                     fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                    fontSize: "var(--text-heading)",
                     fontWeight: 400,
                   }}
                 >
@@ -77,7 +75,7 @@ export default function CompanyPage({
                   <StaggerItem key={s}>
                     <div className="flex items-center gap-4 py-5 border-b border-[var(--color-border)]">
                       <span className="w-1 h-1 bg-[var(--color-accent)] shrink-0" />
-                      <span className="text-[var(--color-text-secondary)]">{s}</span>
+                      <span className="text-[var(--color-text-secondary)] md:text-base md:leading-[1.75]">{s}</span>
                     </div>
                   </StaggerItem>
                 ))}
@@ -88,13 +86,13 @@ export default function CompanyPage({
             <div>
               <ScrollReveal delay={0.2}>
                 <div className="border border-[var(--color-border)] p-8 md:p-8 max-md:p-6 sticky top-32">
-                  <span className="label-text text-[var(--color-accent)] block mb-8">
+                  <span className="label-text text-[var(--color-accent)] block mb-8 md:text-xs md:tracking-[0.18em] md:uppercase">
                     Quick Facts
                   </span>
                   <div className="space-y-6">
                     {highlights.map((h) => (
                       <div key={h.label}>
-                        <span className="label-text text-[var(--color-text-muted)] block mb-2">
+                        <span className="label-text text-[var(--color-text-muted)] block mb-2 md:text-xs md:tracking-[0.18em] md:uppercase">
                           {h.label}
                         </span>
                         <span className="text-[var(--color-text-primary)] font-medium">

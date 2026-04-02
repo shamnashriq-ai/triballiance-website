@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-[var(--color-black)] text-white">
       <div className="container-site">
         {/* Main footer */}
-        <div className="pt-16 pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+        <div className="pt-16 pb-10 md:pt-16 lg:pt-16 md:pb-10 lg:pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Image
@@ -16,15 +16,15 @@ export default function Footer() {
               height={84}
               className="h-28 w-auto object-contain mb-6"
             />
-            <p className="text-white/40 text-[var(--text-small)] leading-relaxed max-w-xs text-left">
+            <p className="text-white/40 text-[var(--text-small)] leading-relaxed max-w-xs text-left md:text-left md:leading-[1.75]">
               A Malaysian multi-sector investment holding company operating
               under the Good to Great investment thesis.
             </p>
           </div>
 
           {/* Navigate */}
-          <div className="text-left">
-            <span className="label-text text-white/30 block mb-6">
+          <div className="text-left md:text-left md:items-start md:self-start">
+            <span className="label-text text-white/30 block mb-6 md:text-xs md:tracking-[0.18em] md:uppercase">
               Navigate
             </span>
             <ul className="space-y-4">
@@ -48,8 +48,8 @@ export default function Footer() {
           </div>
 
           {/* Companies */}
-          <div className="text-left">
-            <span className="label-text text-white/30 block mb-6">
+          <div className="text-left md:text-left md:items-start md:self-start">
+            <span className="label-text text-white/30 block mb-6 md:text-xs md:tracking-[0.18em] md:uppercase">
               Portfolio
             </span>
             <ul className="space-y-4">
@@ -69,8 +69,8 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="text-left">
-            <span className="label-text text-white/30 block mb-6">
+          <div className="text-left md:text-left md:items-start md:self-start">
+            <span className="label-text text-white/30 block mb-6 md:text-xs md:tracking-[0.18em] md:uppercase">
               Contact
             </span>
             <div className="space-y-4 text-[var(--text-small)] text-white/40">

@@ -29,10 +29,9 @@ export default function ContactPage() {
             <ScrollReveal>
               <div className="accent-line mb-8" />
               <h3
-                className="text-[var(--color-text-primary)]"
+                className="text-[var(--color-text-primary)] text-xl md:text-xl lg:text-2xl"
                 style={{
                   fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                  fontSize: "var(--text-heading)",
                   fontWeight: 400,
                   marginBottom: 0,
                 }}
@@ -42,17 +41,16 @@ export default function ContactPage() {
               {submitted ? (
                 <div className="py-20 text-center">
                   <h4
-                    className="text-[var(--color-text-primary)]"
+                    className="text-[var(--color-text-primary)] md:text-lg"
                     style={{
                       fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                      fontSize: "var(--text-heading)",
                       fontWeight: 400,
                       marginBottom: 0,
                     }}
                   >
                     Thank You
                   </h4>
-                  <p className="text-[var(--color-text-secondary)] mt-3">
+                  <p className="text-[var(--color-text-secondary)] mt-3 md:text-base md:leading-[1.75]">
                     Your message has been sent. Our team will respond within 1-2 business days.
                   </p>
                 </div>
@@ -62,11 +60,11 @@ export default function ContactPage() {
                     e.preventDefault();
                     setSubmitted(true);
                   }}
-                  className="space-y-8 mt-[56px] max-md:mt-10"
+                  className="space-y-8 mt-[56px] md:mt-14 max-md:mt-10"
                 >
                   <div className="grid sm:grid-cols-2 gap-8">
                     <div>
-                      <label className="label-text text-[var(--color-text-primary)] block mb-3">
+                      <label className="label-text text-[var(--color-text-primary)] block mb-3 md:text-xs md:tracking-[0.18em] md:uppercase">
                         Full Name
                       </label>
                       <input
@@ -77,7 +75,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
-                      <label className="label-text text-[var(--color-text-primary)] block mb-3">
+                      <label className="label-text text-[var(--color-text-primary)] block mb-3 md:text-xs md:tracking-[0.18em] md:uppercase">
                         Email Address
                       </label>
                       <input
@@ -89,7 +87,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <div>
-                    <label className="label-text text-[var(--color-text-primary)] block mb-3">
+                    <label className="label-text text-[var(--color-text-primary)] block mb-3 md:text-xs md:tracking-[0.18em] md:uppercase">
                       Company / Organization
                     </label>
                     <input
@@ -99,7 +97,7 @@ export default function ContactPage() {
                     />
                   </div>
                   <div>
-                    <label className="label-text text-[var(--color-text-primary)] block mb-3">
+                    <label className="label-text text-[var(--color-text-primary)] block mb-3 md:text-xs md:tracking-[0.18em] md:uppercase">
                       Subject
                     </label>
                     <select
@@ -116,7 +114,7 @@ export default function ContactPage() {
                     </select>
                   </div>
                   <div>
-                    <label className="label-text text-[var(--color-text-primary)] block mb-3">
+                    <label className="label-text text-[var(--color-text-primary)] block mb-3 md:text-xs md:tracking-[0.18em] md:uppercase">
                       Message
                     </label>
                     <textarea
@@ -135,14 +133,14 @@ export default function ContactPage() {
 
             {/* Contact Info */}
             <ScrollReveal delay={0.2}>
-              <div className="sticky top-32 text-left">
-                <span className="label-text text-[var(--color-accent)] block mb-8">
+              <div className="sticky top-32 text-left md:text-left">
+                <span className="label-text text-[var(--color-accent)] block mb-8 md:text-xs md:tracking-[0.18em] md:uppercase">
                   Contact Information
                 </span>
                 <div className="space-y-8">
                   {contactInfo.map((info) => (
                     <div key={info.label}>
-                      <span className="label-text text-[var(--color-text-muted)] block mb-2">
+                      <span className="label-text text-[var(--color-text-muted)] block mb-2 md:text-xs md:tracking-[0.18em] md:uppercase">
                         {info.label}
                       </span>
                       <span className="text-[var(--color-text-primary)]">

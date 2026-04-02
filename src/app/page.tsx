@@ -36,7 +36,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-            className="label-text text-[var(--color-accent)] block mb-3"
+            className="label-text text-[var(--color-accent)] block mb-3 md:text-xs md:tracking-[0.18em] md:uppercase"
           >
             Triballiance Group of Companies
           </motion.span>
@@ -44,10 +44,9 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-            className="max-w-5xl text-left"
+            className="max-w-5xl text-left md:text-left text-[56px] md:text-6xl lg:text-7xl"
             style={{
               fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-              fontSize: "var(--text-hero)",
               fontWeight: 300,
               lineHeight: 1.0,
               letterSpacing: "-0.02em",
@@ -61,7 +60,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.7 }}
-            className="text-white/45 text-lg max-w-lg leading-relaxed mt-5 text-left"
+            className="text-white/45 text-lg max-w-lg leading-relaxed mt-5 text-left md:text-left md:leading-[1.7]"
           >
             A Malaysian multi-sector investment holding company transforming
             businesses with unrealized potential into industry leaders.
@@ -70,7 +69,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.9 }}
-            className="flex flex-wrap gap-4 mt-7"
+            className="flex flex-wrap gap-4 mt-7 md:gap-6"
           >
             <Link href="/about/group" className="btn-primary">
               Discover Our Story <ArrowRight size={16} />
@@ -92,7 +91,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-6 items-start">
             <div className="lg:col-span-4">
               <ScrollReveal>
-                <span className="label-text text-[var(--color-accent)] block mb-3">
+                <span className="label-text text-[var(--color-accent)] block mb-3 md:text-xs md:tracking-[0.18em] md:uppercase">
                   Investment Thesis
                 </span>
                 <div className="accent-line" />
@@ -101,10 +100,9 @@ export default function HomePage() {
             <div className="lg:col-span-8">
               <ScrollReveal delay={0.1}>
                 <h2
-                  className="text-[var(--color-text-primary)]"
+                  className="text-[var(--color-text-primary)] text-4xl lg:text-5xl"
                   style={{
                     fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                    fontSize: "var(--text-display)",
                     fontWeight: 400,
                     lineHeight: 1.1,
                     marginBottom: 0,
@@ -113,7 +111,7 @@ export default function HomePage() {
                   We acquire and build businesses that move
                   Malaysia forward.
                 </h2>
-                <p className="text-[var(--color-text-secondary)] text-lg leading-relaxed max-w-2xl mt-4">
+                <p className="text-[var(--color-text-secondary)] text-lg leading-relaxed max-w-2xl mt-4 md:text-lg md:leading-[1.7]">
                   Triballiance operates under the &ldquo;Good to Great&rdquo; thesis — identifying
                   businesses with strong fundamentals and unrealized potential, then applying
                   strategic capital, governance, and operational excellence to unlock transformative growth.
@@ -133,15 +131,14 @@ export default function HomePage() {
       <section className="section-padding bg-[var(--color-surface)]" >
         <div className="container-site">
           <ScrollReveal>
-            <div className="text-center mb-[56px] max-md:mb-10">
-              <span className="label-text text-[var(--color-accent)] block mb-3 text-center">
+            <div className="text-center mb-[56px] md:mb-14 max-md:mb-10">
+              <span className="label-text text-[var(--color-accent)] block mb-3 text-center md:text-center md:mb-3 md:text-xs md:tracking-[0.18em] md:uppercase">
                 Our Approach
               </span>
               <h2
-                className="text-[var(--color-text-primary)] text-center"
+                className="text-[var(--color-text-primary)] text-center md:text-center text-2xl md:text-4xl lg:text-5xl"
                 style={{
                   fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                  fontSize: "var(--text-heading)",
                   fontWeight: 400,
                   lineHeight: 1.1,
                   marginBottom: 0,
@@ -152,12 +149,12 @@ export default function HomePage() {
             </div>
           </ScrollReveal>
 
-          <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 max-md:gap-8">
+          <StaggerChildren className="grid md:grid-cols-4 gap-10 md:gap-8 max-md:gap-8">
             {methodology.map((item, i) => (
               <StaggerItem key={item.phase}>
                 <div className="border-t border-[var(--color-border)] pt-8">
                   <span
-                    className="block mb-2 text-[var(--color-text-muted)]"
+                    className="block mb-2 md:mt-4 text-[var(--color-text-muted)]"
                     style={{
                       fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
                       fontSize: "48px",
@@ -168,17 +165,16 @@ export default function HomePage() {
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <h3
-                    className="text-[var(--color-text-primary)]"
+                    className="text-[var(--color-text-primary)] text-xl md:text-xl lg:text-2xl md:mt-2"
                     style={{
                       fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                      fontSize: "24px",
                       fontWeight: 500,
                       marginBottom: 0,
                     }}
                   >
                     {item.phase}
                   </h3>
-                  <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed mt-[10px]">
+                  <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed mt-[10px] md:mt-2 md:text-sm md:leading-[1.7]">
                     {item.description}
                   </p>
                 </div>
@@ -194,14 +190,13 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-6">
             <div className="lg:col-span-4">
               <ScrollReveal>
-                <span className="label-text text-[var(--color-accent)] block mb-3">
+                <span className="label-text text-[var(--color-accent)] block mb-3 md:text-xs md:tracking-[0.18em] md:uppercase">
                   Our Portfolio
                 </span>
                 <h2
-                  className="text-[var(--color-text-primary)]"
+                  className="text-[var(--color-text-primary)] text-2xl md:text-4xl lg:text-5xl"
                   style={{
                     fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                    fontSize: "var(--text-heading)",
                     fontWeight: 400,
                     lineHeight: 1.1,
                     marginBottom: 0,
@@ -211,7 +206,7 @@ export default function HomePage() {
                   <br />
                   Nine companies.
                 </h2>
-                <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4 mb-7 max-w-sm">
+                <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4 mb-7 max-w-sm md:text-base md:leading-[1.75]">
                   Each entity operates as a specialist in its domain,
                   collectively building a diversified foundation for sustained growth.
                 </p>
@@ -270,14 +265,13 @@ export default function HomePage() {
 
         <div className="container-site relative z-10" style={{ paddingTop: "120px", paddingBottom: "120px" }}>
           <ScrollReveal>
-            <span className="label-text text-[var(--color-accent)] block mb-3">
+            <span className="label-text text-[var(--color-accent)] block mb-3 md:text-xs md:tracking-[0.18em] md:uppercase">
               Flagship Project
             </span>
             <h2
-              className="text-white max-w-3xl text-left"
+              className="text-white max-w-3xl text-left md:text-left text-4xl md:text-4xl lg:text-5xl"
               style={{
                 fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                fontSize: "var(--text-display)",
                 fontWeight: 400,
                 lineHeight: 1.05,
                 marginBottom: 0,
@@ -286,7 +280,7 @@ export default function HomePage() {
             >
               Perak Medtech Park
             </h2>
-            <p className="text-white text-lg max-w-xl leading-relaxed mt-4 text-left mb-0">
+            <p className="text-white text-lg max-w-xl leading-relaxed mt-4 text-left md:text-left mb-0 md:leading-[1.7]">
               A landmark mixed-use development integrating medical technology,
               commercial spaces, and modern living — transforming Perak&apos;s landscape.
             </p>
@@ -305,10 +299,9 @@ export default function HomePage() {
           <div className="text-center">
             <ScrollReveal>
               <h2
-                className="text-[var(--color-text-primary)] text-center"
+                className="text-[var(--color-text-primary)] text-center md:text-center text-4xl md:text-4xl lg:text-5xl"
                 style={{
                   fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                  fontSize: "var(--text-display)",
                   fontWeight: 400,
                   lineHeight: 1.1,
                   marginBottom: 0,
@@ -318,11 +311,11 @@ export default function HomePage() {
                 <br />
                 <em>meaningful</em> together.
               </h2>
-              <p className="text-[var(--color-text-secondary)] text-lg max-w-[600px] mx-auto leading-relaxed mt-5 mb-0 text-center">
+              <p className="text-[var(--color-text-secondary)] text-lg max-w-[600px] mx-auto leading-relaxed mt-5 mb-0 text-center md:text-center md:text-lg md:leading-[1.7] md:max-w-[600px] md:mx-auto">
                 Partnerships, investments, or conversations — we&apos;re always open
                 to those who share our ambition.
               </p>
-              <div className="flex justify-center gap-4 mt-7">
+              <div className="flex justify-center gap-4 mt-7 md:flex md:justify-center md:gap-6">
                 <Link href="/contact" className="btn-primary">
                   Get In Touch <ArrowRight size={16} />
                 </Link>

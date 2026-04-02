@@ -98,22 +98,21 @@ export default function CompaniesPage() {
                       />
                     )}
                   </div>
-                  <div className={`flex flex-col justify-center text-left ${i % 2 === 1 ? "md:order-1" : ""}`}>
-                    <span className="label-text text-[var(--color-accent)] block mb-2">
+                  <div className={`flex flex-col justify-center text-left md:text-left ${i % 2 === 1 ? "md:order-1" : ""}`}>
+                    <span className="label-text text-[var(--color-accent)] block mb-2 md:mb-2 md:text-xs md:tracking-[0.18em] md:uppercase">
                       {company.industry}
                     </span>
                     <h3
-                      className="text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors duration-200"
+                      className="text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors duration-200 text-xl md:text-xl lg:text-2xl"
                       style={{
                         fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                        fontSize: "var(--text-heading)",
                         fontWeight: 400,
                         marginBottom: 0,
                       }}
                     >
                       {company.name}
                     </h3>
-                    <p className="text-[var(--color-text-secondary)] leading-relaxed mt-3 mb-0">
+                    <p className="text-[var(--color-text-secondary)] leading-relaxed mt-3 mb-0 md:text-base md:leading-[1.75]">
                       {company.description}
                     </p>
                     <span className="editorial-link text-[var(--color-text-primary)] inline-flex items-center gap-2 mt-7">
@@ -135,22 +134,21 @@ export default function CompaniesPage() {
             title="Associated Companies"
             description="Complementing our core portfolio and contributing to the group\u2019s diversified strength."
           />
-          <StaggerChildren className="grid md:grid-cols-3 gap-6 max-md:gap-4 max-w-3xl mx-auto">
+          <StaggerChildren className="grid md:grid-cols-3 md:gap-6 gap-6 max-md:gap-4 max-w-3xl mx-auto">
             {mentioned.map((c) => (
               <StaggerItem key={c.name}>
-                <div className="text-left p-8 max-md:p-6 border-t border-[var(--color-border)]">
+                <div className="text-left md:text-left p-8 md:p-8 max-md:p-6 border-t border-[var(--color-border)]">
                   <h4
-                    className="text-[var(--color-text-primary)]"
+                    className="text-[var(--color-text-primary)] md:text-lg"
                     style={{
                       fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                      fontSize: "20px",
                       fontWeight: 500,
                       marginBottom: 0,
                     }}
                   >
                     {c.name}
                   </h4>
-                  <span className="text-[var(--color-text-muted)] text-[var(--text-small)] mt-2 block">
+                  <span className="text-[var(--color-text-muted)] text-[var(--text-small)] mt-2 md:mt-2 block">
                     {c.industry}
                   </span>
                 </div>

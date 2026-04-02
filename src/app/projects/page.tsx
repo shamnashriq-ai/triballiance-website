@@ -49,7 +49,7 @@ export default function ProjectsPage() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="label-text text-[var(--color-accent)] block mb-3"
+            className="label-text text-[var(--color-accent)] block mb-3 md:text-xs md:tracking-[0.18em] md:uppercase"
           >
             Flagship Project
           </motion.span>
@@ -57,10 +57,9 @@ export default function ProjectsPage() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-            className="text-white max-w-4xl text-left"
+            className="text-white max-w-4xl text-left md:text-left text-4xl md:text-6xl lg:text-7xl"
             style={{
               fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-              fontSize: "var(--text-display)",
               fontWeight: 400,
               lineHeight: 1.05,
               marginBottom: 0,
@@ -72,7 +71,7 @@ export default function ProjectsPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-white text-[var(--text-small)] mt-4 text-left"
+            className="text-white text-[var(--text-small)] mt-4 text-left md:text-left"
           >
             Perak, Malaysia
           </motion.p>
@@ -86,24 +85,23 @@ export default function ProjectsPage() {
             <ScrollReveal>
               <div className="accent-line mb-8" />
               <h2
-                className="text-[var(--color-text-primary)]"
+                className="text-[var(--color-text-primary)] text-2xl md:text-4xl lg:text-5xl"
                 style={{
                   fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                  fontSize: "var(--text-heading)",
                   fontWeight: 400,
                   marginBottom: 0,
                 }}
               >
                 Transforming Perak&apos;s Landscape
               </h2>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg mt-4 mb-4">
+              <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg mt-4 mb-4 md:text-base md:leading-[1.75]">
                 Perak Medtech Park is Triballiance Group&apos;s flagship mixed-use
                 development — a visionary project set to transform the landscape
                 of Perak. This landmark integrates medical technology facilities,
                 commercial spaces, residential living, and green infrastructure
                 into a cohesive, future-ready township.
               </p>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed">
+              <p className="text-[var(--color-text-secondary)] leading-relaxed md:text-base md:leading-[1.75]">
                 Designed to attract investment, create jobs, and elevate quality
                 of life in the region, Perak Medtech Park represents our
                 commitment to developments that serve both economic and social purposes.
@@ -126,10 +124,10 @@ export default function ProjectsPage() {
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <div>
-                      <h4 className="text-[var(--color-text-primary)] font-medium" style={{ marginBottom: 0 }}>
+                      <h4 className="text-[var(--color-text-primary)] font-medium md:text-lg" style={{ marginBottom: 0 }}>
                         {f.label}
                       </h4>
-                      <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed mt-[10px]">
+                      <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed mt-[10px] md:mt-2 md:text-sm md:leading-[1.7]">
                         {f.description}
                       </p>
                     </div>
@@ -139,8 +137,8 @@ export default function ProjectsPage() {
             </StaggerChildren>
           </div>
 
-          <ScrollReveal className="mt-[56px]">
-            <div className="flex justify-center">
+          <ScrollReveal className="mt-[56px] md:mt-14">
+            <div className="flex justify-center md:flex md:justify-center">
               <Link href="/contact" className="btn-primary">
                 Enquire About This Project <ArrowRight size={16} />
               </Link>
