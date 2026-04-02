@@ -14,7 +14,7 @@ const leaders = [
   {
     name: "Khairil Aminudin",
     role: "Group Chief Operating Officer",
-    image: null,
+    image: "/leader-khairil.jpg",
     bio: "Bio coming soon.",
   },
   {
