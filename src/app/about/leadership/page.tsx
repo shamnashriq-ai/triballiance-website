@@ -15,13 +15,13 @@ const leaders = [
     name: "Khairil Aminudin",
     role: "Group Chief Operating Officer",
     image: "/leader-khairil.jpg",
-    bio: "Bio coming soon.",
+    bio: "A versatile venture builder with extensive experience in business development, project management, and smart contracts. With a solid background in engineering and technology, Khairil has successfully led and co-founded ventures across marine engineering, mobile gaming, and online retail — launching global gaming titles, establishing e-commerce platforms, and driving growth for marine engineering services. His technical expertise, combined with entrepreneurial acumen, positions him as a forward-thinking leader in integrating smart technologies across the group\u2019s portfolio.",
   },
   {
     name: "Mohd Azzart Moideen",
     role: "Group Chief Corporate Strategy",
     image: "/leader-azzart.jpg",
-    bio: "Bio coming soon.",
+    bio: "A seasoned technocrat with expertise in corporatization and innovation-driven leadership, Azzart has a proven track record of improving profitability, streamlining operations, and driving cost efficiencies. During Malaysia\u2019s COVID-19 response, he led the integration of robotic technologies at PKRC-MAEPS, enhancing operational efficiency and protecting frontline workers. As a director in companies including Nanoace and Ideasparq Robotics, he drives strategic growth, financial management, and stakeholder engagement across the group.",
   },
   {
     name: "Faizah Ishak",
