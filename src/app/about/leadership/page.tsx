@@ -27,7 +27,7 @@ const leaders = [
     name: "Faizah Ishak",
     role: "Chief Financial Officer",
     image: "/leader-faizah.jpg",
-    bio: "Bio coming soon.",
+    bio: "A seasoned finance professional with over 30 years of experience across the banking and stockbroking industries. Faizah holds a Bachelor of Accountancy (Hons) and has held senior roles at TA Securities and major Malaysian banks, specialising in credit evaluation, margin financing, financial reporting, and regulatory compliance. Her deep expertise in risk management, treasury operations, and corporate financing — combined with a strong commitment to governance and operational excellence — brings financial rigour and strategic clarity to the group.",
   },
   {
     name: "Yusni Yussof",
