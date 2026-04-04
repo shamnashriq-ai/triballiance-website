@@ -163,11 +163,8 @@ export default function ProjectsPage() {
               <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg mt-4 mb-4 md:text-base md:leading-[1.75]">
                 Situated in Bandar Meru Raya — a rapidly urbanising township of over 150,000 residents (80% youths) — Perak Medtech Park is a 35-acre technology park with a deep focus on wellness and healthtech, poised to become the destination for innovative healthcare solutions.
               </p>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed md:text-base md:leading-[1.75] mb-4">
-                Ipoh City sits at the crossroads of ASEAN&apos;s healthcare transit loop, just 12 minutes from Sultan Azlan Shah Airport, 2 hours from Penang, and 2.5 hours from Kuala Lumpur. With the Menora Tunnel development nearby and PLUS highway adjacency, PMP enjoys unmatched connectivity and landmark visibility.
-              </p>
               <p className="text-[var(--color-text-secondary)] leading-relaxed md:text-base md:leading-[1.75]">
-                The park addresses a critical gap: there is yet no hospital in Bandar Meru Raya, Hospital Raja Permaisuri Bainun is over capacity with no room for expansion, and Penang&apos;s healthcare access is at full capacity. PMP is positioned to catalyse greater access to affordable, quality healthcare services in this connected, rapidly growing market.
+                Ipoh City sits at the crossroads of ASEAN&apos;s healthcare transit loop, just 12 minutes from Sultan Azlan Shah Airport, 2 hours from Penang, and 2.5 hours from Kuala Lumpur. With the Menora Tunnel development nearby and PLUS highway adjacency, PMP enjoys unmatched connectivity and landmark visibility.
               </p>
             </ScrollReveal>
 
