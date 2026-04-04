@@ -57,6 +57,7 @@ export default function LeadershipPage() {
         subtitle="Leadership"
         title="Guided by Experience"
         description="The leadership driving Triballiance Group\u2019s vision of diversified excellence across Malaysia."
+        backgroundImage="https://images.unsplash.com/photo-1761319659783-cceb1973d6f8?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
 
       <section className="section-padding">
