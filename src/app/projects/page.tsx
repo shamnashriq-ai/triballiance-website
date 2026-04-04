@@ -220,7 +220,7 @@ export default function ProjectsPage() {
                 &ldquo;To Strengthen Perak As The Hub For Inclusive Healthcare Access&rdquo;
               </h2>
               <p className="text-white/60 mt-6 md:text-base leading-relaxed">
-                Backed by the Ministry of Higher Education and Ministry of Health, PMP brings together hospital operators, campus partners, landowners, and medtech innovators as first movers in an ecosystem development model.
+                In support of the country&apos;s vision for inclusive and accessible healthcare, PMP brings together hospital operators, campus partners, landowners, and medtech innovators as first movers in an ecosystem development model.
               </p>
             </div>
           </ScrollReveal>
