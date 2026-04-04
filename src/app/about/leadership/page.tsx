@@ -129,9 +129,6 @@ export default function LeadershipPage() {
                 &ldquo;We don&apos;t just build companies — we build ecosystems of
                 opportunity that empower people and communities to thrive.&rdquo;
               </blockquote>
-              <p className="label-text text-[var(--color-accent)] mt-7 text-center md:text-center md:text-xs md:tracking-[0.18em] md:uppercase">
-                Shamsul Nashriq Bin Norhisham, Group Managing Director
-              </p>
             </ScrollReveal>
           </div>
         </div>
