@@ -161,7 +161,7 @@ export default function ProjectsPage() {
                 A Global City Nestled In The Heart of ASEAN
               </h2>
               <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg mt-4 mb-4 md:text-base md:leading-[1.75]">
-                Situated in Bandar Meru Raya — a rapidly urbanising township of over 150,000 residents (80% youths) — Perak Medtech Park is a 35-acre technology park with a deep focus on wellness and healthtech, poised to become the destination for innovative healthcare solutions.
+                Situated in Bandar Meru Raya — a rapidly urbanising township of around 100,000 residents (80% youths) — Perak Medtech Park is a 35-acre technology park with a deep focus on wellness and healthtech, poised to become the destination for innovative healthcare solutions.
               </p>
               <p className="text-[var(--color-text-secondary)] leading-relaxed md:text-base md:leading-[1.75]">
                 Ipoh City sits at the crossroads of ASEAN&apos;s healthcare transit loop, just 12 minutes from Sultan Azlan Shah Airport, 2 hours from Penang, and 2.5 hours from Kuala Lumpur. With the Menora Tunnel development nearby and PLUS highway adjacency, PMP enjoys unmatched connectivity and landmark visibility.
