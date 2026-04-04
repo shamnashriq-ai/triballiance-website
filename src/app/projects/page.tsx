@@ -14,38 +14,6 @@ const marketStats = [
   { value: ">50%", label: "Indonesian", sub: "Medical tourists" },
 ];
 
-const clusters = [
-  {
-    number: "01",
-    label: "Private Hospital",
-    description: "A 200-bed PFI-led private hospital facility across 5 acres, anchoring the park\u2019s healthcare ecosystem.",
-    gdv: "RM 500M",
-  },
-  {
-    number: "02",
-    label: "Teaching Hospital Campus",
-    description: "A 5-acre medical university college campus integrating work, live, study and play \u2014 the base for medtech talent supply.",
-    gdv: "RM 250M",
-  },
-  {
-    number: "03",
-    label: "Medtech Incubation Cohort",
-    description: "A 2-acre innovation precinct for medtech startups and companies to develop and commercialise healthcare solutions.",
-    gdv: "RM 150M",
-  },
-  {
-    number: "04",
-    label: "Wellness & Frontliner Residency",
-    description: "Staff residential blocks and wellness residency clusters across 3 acres, designed for hospital frontliners and families.",
-    gdv: "TBA",
-  },
-  {
-    number: "05",
-    label: "Commercial District",
-    description: "10 acres of commercial shoplots, retail units and residential developments serving the surrounding 150,000-strong community.",
-    gdv: "RM 380M",
-  },
-];
 
 const swot = {
   strengths: [
@@ -256,75 +224,6 @@ export default function ProjectsPage() {
               </p>
             </div>
           </ScrollReveal>
-        </div>
-      </section>
-
-      {/* The Masterplan — Clusters */}
-      <section className="section-padding">
-        <div className="container-site">
-          <ScrollReveal>
-            <div className="accent-line mb-8" />
-            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
-              <div>
-                <h2
-                  className="text-[var(--color-text-primary)] text-2xl md:text-4xl lg:text-5xl"
-                  style={{
-                    fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                    fontWeight: 400,
-                    marginBottom: 0,
-                  }}
-                >
-                  The Masterplan
-                </h2>
-                <p className="text-[var(--color-text-secondary)] mt-3 md:text-base leading-relaxed max-w-2xl">
-                  A 35-acre integrated ecosystem across five development clusters with a combined Gross Development Value of RM 1.28 billion.
-                </p>
-              </div>
-              <p
-                className="text-[var(--color-accent)] text-2xl md:text-3xl shrink-0"
-                style={{
-                  fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                  fontWeight: 500,
-                  marginBottom: 0,
-                }}
-              >
-                GDV RM 1.28B
-              </p>
-            </div>
-          </ScrollReveal>
-
-          <StaggerChildren className="space-y-0">
-            {clusters.map((c) => (
-              <StaggerItem key={c.number}>
-                <div className="flex gap-8 py-10 max-md:py-8 border-b border-[var(--color-border)] first:border-t">
-                  <span
-                    className="text-[var(--color-text-muted)] shrink-0"
-                    style={{
-                      fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                      fontSize: "36px",
-                      fontWeight: 300,
-                      lineHeight: 1,
-                    }}
-                  >
-                    {c.number}
-                  </span>
-                  <div className="flex-1">
-                    <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2">
-                      <h4 className="text-[var(--color-text-primary)] font-medium md:text-lg" style={{ marginBottom: 0 }}>
-                        {c.label}
-                      </h4>
-                      <span className="text-[var(--color-accent)] text-sm font-medium shrink-0">
-                        {c.gdv}
-                      </span>
-                    </div>
-                    <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed mt-[10px] md:mt-2 md:text-sm md:leading-[1.7]">
-                      {c.description}
-                    </p>
-                  </div>
-                </div>
-              </StaggerItem>
-            ))}
-          </StaggerChildren>
         </div>
       </section>
 
