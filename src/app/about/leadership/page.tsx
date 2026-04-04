@@ -33,7 +33,7 @@ const leaders = [
     name: "Ruhaini Gani",
     role: "Chief HR Officer",
     image: "/leader-ruhaini.jpg",
-    bio: "Bio coming soon.",
+    bio: "A versatile corporate professional with cross-sector experience spanning construction, manufacturing and robotics. With a law degree from Universiti Teknologi MARA (UiTM), Aini brings a governance-driven lens to people management, administration and organisational development. Having worked closely with senior leadership on key decisions in workforce strategy and compliance, she now oversees Human Resources and Administration for the group — strengthening processes, driving operational efficiency and ensuring clarity across the organisation. Her ability to translate leadership vision into disciplined execution underpins the group\u2019s commitment to consistency and sustainable growth.",
     imagePosition: "center 20%",
   },
   {
