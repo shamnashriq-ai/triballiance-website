@@ -4,36 +4,65 @@ import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
 import ScrollReveal, { StaggerChildren, StaggerItem } from "@/components/ScrollReveal";
 
-const pillars = [
+const tribalValues = [
   {
-    title: "Innovation First",
+    letter: "T",
+    title: "Teamwork",
     description:
-      "We believe innovation isn\u2019t just about technology \u2014 it\u2019s about finding better ways to serve, operate, and grow.",
+      "We operate as one unified force — leveraging collective strengths across our portfolio to achieve what no single entity could alone.",
   },
   {
-    title: "Partnership & Trust",
+    letter: "R",
+    title: "Relationship-Driven",
     description:
-      "Our success is built on lasting relationships. We invest in trust \u2014 with employees, partners, clients, and communities.",
+      "Every partnership, investment, and venture is built on the foundation of meaningful, trust-based relationships that endure.",
   },
   {
-    title: "Sustainable Growth",
+    letter: "I",
+    title: "Innovation-Led",
     description:
-      "Growth without responsibility is hollow. We pursue opportunities that create long-term value while respecting our environment.",
+      "We infuse technology and fresh thinking into traditional industries, turning good ideas into great realities through bold innovation.",
   },
   {
-    title: "People-Centric",
+    letter: "B",
+    title: "Bridging-Alliances",
     description:
-      "Behind every great company are great people. We invest in talent development and create inclusive workplaces.",
+      "We connect people, industries, and opportunities — forging strategic alliances that create value greater than the sum of their parts.",
   },
   {
-    title: "Ethical Conduct",
+    letter: "A",
+    title: "Accountability",
     description:
-      "Integrity is non-negotiable. We hold ourselves to the highest standards of corporate governance and transparency.",
+      "We hold ourselves to the highest standards of integrity and transparency, ensuring every decision serves our stakeholders and communities.",
   },
   {
-    title: "National Contribution",
+    letter: "L",
+    title: "Long Lasting",
     description:
-      "As a Malaysian conglomerate, we take pride in contributing to the nation\u2019s economic development and global competitiveness.",
+      "We build for permanence — pursuing sustainable returns for our shareholders through ventures designed to stand the test of time.",
+  },
+];
+
+const visionPillars = [
+  {
+    title: "Strengthen Relationships",
+    description:
+      "Harnessing our platform with good approaches to strengthen relationships across industries and communities.",
+  },
+  {
+    title: "Ideas to Realisation",
+    description:
+      "Clear roadmapping on how we move our good-to-great ideas to realisation through disciplined execution.",
+  },
+  {
+    title: "Multiple Capital Strategies",
+    description:
+      "Growing our portfolios via multiple capital strategies and toolkits including M&A, tech infusion, and strategic holding.",
+  },
+  {
+    title: "Transform & Empower",
+    description:
+      "Transform industries, empower communities, and impact our economy — creating lasting value for the nation.",
   },
 ];
 
@@ -42,19 +71,84 @@ export default function PhilosophyPage() {
     <>
       <PageHero
         subtitle="Our Philosophy"
-        title="What We Stand For"
-        description="The principles that guide our decisions, shape our culture, and define who we are."
+        title="The Tribal New Order"
+        description="A vision we have lived by since our inception — to transform industries, empower communities, and impact our economy."
       />
 
+      {/* T.R.I.B.A.L Investment Philosophy */}
       <section className="section-padding">
         <div className="container-site">
           <SectionHeading
-            subtitle="Our Pillars"
-            title="Six Pillars of Excellence"
-            description="Foundational principles underpinning everything we do across all companies and ventures."
+            subtitle="Investment Philosophy"
+            title="T.R.I.B.A.L"
+            description="Six core values that define how we invest, build, and grow — driving business innovation, collaboration, and sustainable returns for our shareholders."
           />
           <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-6 max-md:gap-8">
-            {pillars.map((p, i) => (
+            {tribalValues.map((v, i) => (
+              <StaggerItem key={v.letter}>
+                <div className="border-t border-[var(--color-border)] pt-8 md:text-left">
+                  <span
+                    className="block mb-2 md:mt-4 text-[var(--color-accent)]"
+                    style={{
+                      fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                      fontSize: "48px",
+                      fontWeight: 600,
+                      lineHeight: 1,
+                    }}
+                  >
+                    {v.letter}
+                  </span>
+                  <h3
+                    className="text-[var(--color-text-primary)] text-xl md:text-xl lg:text-2xl md:mt-2"
+                    style={{
+                      fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                      fontWeight: 500,
+                      marginBottom: 0,
+                    }}
+                  >
+                    {v.title}
+                  </h3>
+                  <p className="text-[var(--color-text-secondary)] text-[var(--text-small)] leading-relaxed mt-[10px] md:mt-2 md:text-sm md:leading-[1.7]">
+                    {v.description}
+                  </p>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerChildren>
+        </div>
+      </section>
+
+      {/* Vision Quote */}
+      <section className="section-padding bg-[var(--color-surface)]">
+        <div className="container-site text-center">
+          <ScrollReveal>
+            <blockquote
+              className="text-[var(--color-text-primary)] max-w-3xl mx-auto text-center md:text-center text-2xl md:text-4xl lg:text-5xl"
+              style={{
+                fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                fontWeight: 400,
+                lineHeight: 1.3,
+                fontStyle: "italic",
+              }}
+            >
+              &ldquo;The Tribal New Order is a vision we live for since our
+              inception.&rdquo;
+            </blockquote>
+            <div className="accent-line mx-auto mt-7" />
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Strategic Vision Pillars */}
+      <section className="section-padding">
+        <div className="container-site">
+          <SectionHeading
+            subtitle="Our Approach"
+            title="Strategic Vision"
+            description="Guided by tribal philosophy, accountability, strategic thinking, and fearless execution."
+          />
+          <StaggerChildren className="grid md:grid-cols-2 gap-10 md:gap-8">
+            {visionPillars.map((p, i) => (
               <StaggerItem key={p.title}>
                 <div className="border-t border-[var(--color-border)] pt-8 md:text-left">
                   <span
@@ -85,27 +179,6 @@ export default function PhilosophyPage() {
               </StaggerItem>
             ))}
           </StaggerChildren>
-        </div>
-      </section>
-
-      {/* Quote */}
-      <section className="section-padding bg-[var(--color-surface)]">
-        <div className="container-site text-center">
-          <ScrollReveal>
-            <blockquote
-              className="text-[var(--color-text-primary)] max-w-3xl mx-auto text-center md:text-center text-2xl md:text-4xl lg:text-5xl"
-              style={{
-                fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-                fontWeight: 400,
-                lineHeight: 1.3,
-                fontStyle: "italic",
-              }}
-            >
-              &ldquo;A company is only as strong as the values it refuses to
-              compromise on. At Triballiance, our values are our compass.&rdquo;
-            </blockquote>
-            <div className="accent-line mx-auto mt-7" />
-          </ScrollReveal>
         </div>
       </section>
     </>
