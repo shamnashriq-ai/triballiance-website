@@ -73,6 +73,7 @@ export default function PhilosophyPage() {
         subtitle="Our Philosophy"
         title="The Tribal New Order"
         description="A vision we have lived by since our inception — to transform industries, empower communities, and impact our economy."
+        backgroundImage="https://images.unsplash.com/photo-1519370855830-34c503c41d0f?q=80&w=1361&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
 
       {/* T.R.I.B.A.L Investment Philosophy */}
