@@ -34,6 +34,7 @@ const leaders = [
     role: "Chief HR Officer",
     image: "/leader-ruhaini.jpg",
     bio: "Bio coming soon.",
+    imagePosition: "center 20%",
   },
   {
     name: "Yusni Yussof",
@@ -72,6 +73,7 @@ export default function LeadershipPage() {
                         width={280}
                         height={373}
                         className="w-full h-full object-cover object-top"
+                        style={leader.imagePosition ? { objectPosition: leader.imagePosition } : undefined}
                       />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-[var(--color-text-secondary)] text-sm">
