@@ -96,20 +96,21 @@ export default function ProjectsPage() {
           >
             Flagship Project
           </motion.span>
-          <motion.h1
+          <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-            className="text-white max-w-4xl text-left md:text-left text-4xl md:text-6xl lg:text-7xl"
-            style={{
-              fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
-              fontWeight: 400,
-              lineHeight: 1.05,
-              marginBottom: 0,
-            }}
+            className="max-w-md md:max-w-lg lg:max-w-xl"
           >
-            Perak Medtech Park
-          </motion.h1>
+            <Image
+              src="/pmp-logo-white.png"
+              alt="Perak Medtech Park"
+              width={800}
+              height={320}
+              className="w-full h-auto"
+              priority
+            />
+          </motion.div>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
