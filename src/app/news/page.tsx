@@ -56,6 +56,7 @@ export default function NewsPage() {
         subtitle="Latest Updates"
         title="News & Announcements"
         description="Stay informed about the latest developments across the Triballiance Group."
+        backgroundImage="https://images.unsplash.com/photo-1671955101244-34c69cf8bd05?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
 
       <section className="section-padding">
