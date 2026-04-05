@@ -17,37 +17,6 @@ const leaders = [
     image: "/leader-khairil.jpg",
     bio: "A versatile venture builder with extensive experience in business development, project management, and smart contracts. With a solid background in engineering and technology, Khairil has successfully led and co-founded ventures across marine engineering, mobile gaming, and online retail — launching global gaming titles, establishing e-commerce platforms, and driving growth for marine engineering services. His technical expertise, combined with entrepreneurial acumen, positions him as a forward-thinking leader in integrating smart technologies across the group\u2019s portfolio.",
   },
-  {
-    name: "Mohd Azzart Moideen",
-    role: "Group Chief Corporate Strategy",
-    image: "/leader-azzart.jpg",
-    bio: "A seasoned technocrat with expertise in corporatization and innovation-driven leadership, Azzart has a proven track record of improving profitability, streamlining operations, and driving cost efficiencies. During Malaysia\u2019s COVID-19 response, he led the integration of robotic technologies at PKRC-MAEPS, enhancing operational efficiency and protecting frontline workers. As a director in companies including Nanoace and Ideasparq Robotics, he drives strategic growth, financial management, and stakeholder engagement across the group.",
-  },
-  {
-    name: "Faizah Ishak",
-    role: "Chief Financial Officer",
-    image: "/leader-faizah.jpg",
-    bio: "A seasoned finance professional with over 30 years of experience across the banking and stockbroking industries. Faizah holds a Bachelor of Accountancy (Hons) and has held senior roles at TA Securities and major Malaysian banks, specialising in credit evaluation, margin financing, financial reporting, and regulatory compliance. Her deep expertise in risk management, treasury operations, and corporate financing — combined with a strong commitment to governance and operational excellence — brings financial rigour and strategic clarity to the group.",
-  },
-  {
-    name: "Ruhaini Gani",
-    role: "Chief HR Officer",
-    image: "/leader-ruhaini.jpg",
-    bio: "A versatile corporate professional with cross-sector experience spanning construction, manufacturing and robotics. With a law degree from Universiti Teknologi MARA (UiTM), Aini brings a governance-driven lens to people management, administration and organisational development. Having worked closely with senior leadership on key decisions in workforce strategy and compliance, she now oversees Human Resources and Administration for the group — strengthening processes, driving operational efficiency and ensuring clarity across the organisation. Her ability to translate leadership vision into disciplined execution underpins the group\u2019s commitment to consistency and sustainable growth.",
-    imagePosition: "center 20%",
-  },
-  {
-    name: "Yusni Yussof",
-    role: "Chief Legal Officer",
-    image: "/leader-yusni.jpg",
-    bio: "Bio coming soon.",
-  },
-  {
-    name: "Faizul",
-    role: "Head of Development",
-    image: "/leader-faizul.jpg",
-    bio: "Bio coming soon.",
-  },
 ];
 
 export default function LeadershipPage() {
