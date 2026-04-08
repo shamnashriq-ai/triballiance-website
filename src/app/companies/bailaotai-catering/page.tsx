@@ -15,6 +15,7 @@ export default function BailaotaiCateringPage() {
         "Full-service event coordination",
         "Halal-certified food preparation",
       ]}
+      backgroundImage="/bailaotai-catering-bg.jpg"
       highlights={[
         { label: "Industry", value: "F&B" },
         { label: "Location", value: "Malaysia" },
