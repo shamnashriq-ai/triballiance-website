@@ -74,7 +74,7 @@ export default function Footer() {
               Contact
             </span>
             <div className="space-y-4 text-[var(--text-small)] text-white/40">
-              <p>Kuala Lumpur, Malaysia</p>
+              <p>E3-06-08 Tamarind Square, Persiaran Multimedia, Cyber 10, 43000 Cyberjaya, Selangor, Malaysia</p>
               <p>info@triballiance.com</p>
             </div>
           </div>

@@ -9,13 +9,13 @@ const leaders = [
     name: "Shamsul Nashriq Bin Norhisham",
     role: "Group Managing Director",
     image: "/leader-shamsul-nashriq.jpg",
-    bio: "A designer-turned-strategist with 16+ years of experience across business development, brand strategy, and corporate restructuring. Shamsul drives the group\u2019s \u201cGood to Great\u201d investment thesis and oversees the entire portfolio — bringing a rare blend of creative vision and operational discipline to every venture.",
+    bio: "A designer-turned-strategist with 16+ years of experience across business development, brand strategy, and corporate restructuring. Shamsul drives the group's "Good to Great" investment thesis and oversees the entire portfolio — bringing a rare blend of creative vision and operational discipline to every venture.",
   },
   {
     name: "Khairil Aminudin",
     role: "Group Chief Operating Officer",
     image: "/leader-khairil.jpg",
-    bio: "A versatile venture builder with extensive experience in business development, project management, and smart contracts. With a solid background in engineering and technology, Khairil has successfully led and co-founded ventures across marine engineering, mobile gaming, and online retail — launching global gaming titles, establishing e-commerce platforms, and driving growth for marine engineering services. His technical expertise, combined with entrepreneurial acumen, positions him as a forward-thinking leader in integrating smart technologies across the group\u2019s portfolio.",
+    bio: "A versatile venture builder with extensive experience in business development, project management, and smart contracts. With a solid background in engineering and technology, Khairil has successfully led and co-founded ventures across marine engineering, mobile gaming, and online retail — launching global gaming titles, establishing e-commerce platforms, and driving growth for marine engineering services. His technical expertise, combined with entrepreneurial acumen, positions him as a forward-thinking leader in integrating smart technologies across the group's portfolio.",
   },
 ];
 
@@ -25,7 +25,7 @@ export default function LeadershipPage() {
       <PageHero
         subtitle="Leadership"
         title="Guided by Experience"
-        description="The leadership driving Triballiance Group\u2019s vision of diversified excellence across Malaysia."
+        description="The leadership driving Triballiance Group's vision of diversified excellence across Malaysia."
         backgroundImage="https://images.unsplash.com/photo-1761319659783-cceb1973d6f8?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
 

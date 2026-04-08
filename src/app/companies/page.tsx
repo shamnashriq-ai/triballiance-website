@@ -12,7 +12,7 @@ const featured = [
     name: "Tribal Minera Sdn Bhd",
     industry: "Mining & Minerals",
     description:
-      "Specializing in mineral resources exploration, extraction, and processing. Tribal Minera drives responsible mining operations that contribute to Malaysia\u2019s industrial growth.",
+      "Specializing in mineral resources exploration, extraction, and processing. Tribal Minera drives responsible mining operations that contribute to Malaysia's industrial growth.",
     href: "/companies/tribal-minera",
     image: "/tribal-minera-bg.jpg",
   },
@@ -52,7 +52,7 @@ const featured = [
     name: "Restoran C Ahmad & Syed",
     industry: "Food & Beverage",
     description:
-      "An authentic Malaysian restaurant offering traditional cuisine with a modern twist, celebrating Malaysia\u2019s rich culinary heritage.",
+      "An authentic Malaysian restaurant offering traditional cuisine with a modern twist, celebrating Malaysia's rich culinary heritage.",
     href: "/companies/restoran-c-ahmad-syed",
     image: "/restoran-c-ahmad-syed-bg.jpg",
   },
@@ -70,7 +70,7 @@ export default function CompaniesPage() {
       <PageHero
         subtitle="Our Portfolio"
         title="Our Companies"
-        description="Nine companies across six industries — each a specialist in its domain, collectively building Malaysia\u2019s future."
+        description="Nine companies across six industries — each a specialist in its domain, collectively building Malaysia's future."
         backgroundImage="/companies-header-bg.jpg"
         backgroundPosition="right top"
       />
@@ -132,7 +132,7 @@ export default function CompaniesPage() {
           <SectionHeading
             subtitle="Also Part of the Group"
             title="Associated Companies"
-            description="Complementing our core portfolio and contributing to the group\u2019s diversified strength."
+            description="Complementing our core portfolio and contributing to the group's diversified strength."
           />
           <StaggerChildren className="grid md:grid-cols-3 md:gap-6 gap-6 max-md:gap-4 max-w-3xl mx-auto">
             {mentioned.map((c) => (

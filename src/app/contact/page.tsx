@@ -6,7 +6,7 @@ import { Send } from "lucide-react";
 import { useState } from "react";
 
 const contactInfo = [
-  { label: "Office", value: "Kuala Lumpur, Malaysia" },
+  { label: "Office", value: "E3-06-08 Tamarind Square, Persiaran Multimedia, Cyber 10, 43000 Cyberjaya, Selangor, Malaysia" },
   { label: "Email", value: "info@triballiance.com" },
   { label: "Hours", value: "Mon \u2013 Fri, 9:00 AM \u2013 6:00 PM" },
 ];
@@ -19,7 +19,7 @@ export default function ContactPage() {
       <PageHero
         subtitle="Get in Touch"
         title="Contact Us"
-        description="Have a question, proposal, or partnership opportunity? We\u2019d love to hear from you."
+        description="Have a question, proposal, or partnership opportunity? We would love to hear from you."
         backgroundImage="https://images.unsplash.com/photo-1548614239-54eff7340b6e?q=80&w=1444&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
 

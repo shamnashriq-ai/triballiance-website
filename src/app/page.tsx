@@ -15,7 +15,7 @@ const companies = [
 ];
 
 const methodology = [
-  { phase: "Identify", description: "We seek businesses with unrealized potential in sectors critical to Malaysia\u2019s growth." },
+  { phase: "Identify", description: "We seek businesses with unrealized potential in sectors critical to Malaysia's growth." },
   { phase: "Invest", description: "Strategic capital deployment paired with operational infrastructure and governance." },
   { phase: "Transform", description: "Hands-on value creation through systems, talent, and market repositioning." },
   { phase: "Scale", description: "Sustainable growth pathways that compound returns across the portfolio." },

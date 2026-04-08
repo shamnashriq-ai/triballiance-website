@@ -10,7 +10,7 @@ const articles = [
     category: "Corporate",
     title: "Triballiance Group Announces Strategic Expansion Plans",
     excerpt:
-      "The group unveils ambitious plans to expand its portfolio across key sectors, reinforcing its position as one of Malaysia\u2019s most dynamic investment holding companies.",
+      "The group unveils ambitious plans to expand its portfolio across key sectors, reinforcing its position as one of Malaysia's most dynamic investment holding companies.",
   },
   {
     date: "February 2026",
@@ -24,7 +24,7 @@ const articles = [
     category: "Technology",
     title: "Ideasparq Robotics Launches New Automation Platform",
     excerpt:
-      "Triballiance\u2019s technology arm introduces a next-generation robotics platform aimed at enhancing industrial productivity across Southeast Asia.",
+      "Triballiance's technology arm introduces a next-generation robotics platform aimed at enhancing industrial productivity across Southeast Asia.",
   },
   {
     date: "December 2025",
