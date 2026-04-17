@@ -13,7 +13,7 @@ const leaders = [
   },
   {
     name: "Khairil Aminudin",
-    role: "Group Chief Operating Officer",
+    role: "Executive Director",
     image: "/leader-khairil.jpg",
     bio: "A versatile venture builder with extensive experience in business development, project management, and smart contracts. With a solid background in engineering and technology, Khairil has successfully led and co-founded ventures across marine engineering, mobile gaming, and online retail — launching global gaming titles, establishing e-commerce platforms, and driving growth for marine engineering services. His technical expertise, combined with entrepreneurial acumen, positions him as a forward-thinking leader in integrating smart technologies across the group's portfolio.",
   },
