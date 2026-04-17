@@ -9,7 +9,7 @@ const leaders = [
     name: "Shamsul Nashriq Bin Norhisham",
     role: "Group Managing Director",
     image: "/leader-shamsul-nashriq.jpg",
-    bio: "A designer-turned-strategist with 16+ years of experience across business development, brand strategy, and corporate restructuring. Shamsul drives the group's "Good to Great" investment thesis and oversees the entire portfolio — bringing a rare blend of creative vision and operational discipline to every venture.",
+    bio: "A designer-turned-strategist with 16+ years of experience across business development, brand strategy, and corporate restructuring. Shamsul drives the group\u2019s \u201cGood to Great\u201d investment thesis and oversees the entire portfolio \u2014 bringing a rare blend of creative vision and operational discipline to every venture.",
   },
   {
     name: "Khairil Aminudin",
@@ -43,7 +43,6 @@ export default function LeadershipPage() {
                         width={280}
                         height={373}
                         className="w-full h-full object-cover object-top"
-                        style={leader.imagePosition ? { objectPosition: leader.imagePosition } : undefined}
                       />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-[var(--color-text-secondary)] text-sm">
